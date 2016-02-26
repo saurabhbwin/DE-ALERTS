@@ -1,0 +1,36 @@
+
+/* Stylesheet content from css/mdpimobile.css in folder common */
+.custom-btn {
+  
+  margin-left: 33%;
+   
+  margin-top: -3%;
+  
+ 
+}
+
+.ui-grid-a, .ui-grid-b, .ui-grid-c, .ui-grid-d, .ui-grid-solo {
+  overflow: hidden;
+  padding-top: 7%;  
+}
+
+/* .ui-content {
+  border-width: 0;
+  overflow: visible;
+  overflow-x: hidden;
+  padding: 1em;
+  margin-top: 15% !important;
+} */
+
+/* .SubscribeButton{ 
+   
+  text-shadow: none !important;
+  
+   border: none !important;
+   background-color: #144EB9 !important;
+   text-shadow: none !important; 
+   color: #ECECEC !important;
+   font-size: 17px !important !important;
+   height: 42px !important;
+   margin-top:5%!important;
+}   */

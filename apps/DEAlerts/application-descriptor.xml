@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Licensed Materials - Property of IBM
+			 5725-I43 (C) Copyright IBM Corp. 2006, 2013. All Rights Reserved.
+			 US Government Users Restricted Rights - Use, duplication or
+             disclosure restricted by GSA ADP Schedule Contract with IBM Corp. --><!-- Attribute "id" must be identical to application folder name --><application xmlns="http://www.worklight.com/application-descriptor" id="DEAlerts" platformVersion="6.2.0.00.20141002-1640">
+    <displayName>DEAlerts</displayName>
+    <description>DEAlerts</description>
+    <author>
+        <name>application's author</name>
+        <email>application author's e-mail</email>
+        <homepage>http://mycompany.com</homepage>
+        <copyright>Copyright My Company</copyright>
+    </author>
+    <mainFile>index.html</mainFile>
+    <features/>
+    <thumbnailImage>common/images/thumbnail.png</thumbnailImage>
+    <iphone bundleId="com.ibm.cio.be.DEAlerts" securityTest="WL_IIPAuthenticatorRealmTest-mobile" version="3.5">  
+        <worklightSettings include="false"/>
+        <pushSender password="ibm4you1"/>
+        <security>
+            <encryptWebResources enabled="false"/>
+            <testWebResourcesChecksum enabled="false" ignoreFileExtensions="png, jpg, jpeg, gif, mp4, mp3"/>
+        </security>
+    </iphone>
+    <android securityTest="WL_IIPAuthenticatorRealmTest-mobile" version="3.5">
+        <worklightSettings include="false"/>
+        <pushSender key="AIzaSyBs5n4Uti8NbrFBXjmtL33ZwBW5HBUn7Yw" senderId="1023607973625"/>
+        <security>
+            <encryptWebResources enabled="false"/>
+            <testWebResourcesChecksum enabled="false" ignoreFileExtensions="png, jpg, jpeg, gif, mp4, mp3"/>
+            <publicSigningKey/>
+            <packageName/>
+        </security>
+    </android>
+</application>

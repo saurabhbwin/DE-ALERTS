@@ -1,0 +1,913 @@
+<!DOCTYPE HTML><html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <title>DE</title>
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" name="viewport">
+    		<!--
+    			<link rel="shortcut icon" href="images/applogo.png">
+    			<link rel="apple-touch-icon" href="images/apple-touch-icon.png"> 
+    		-->
+        <link href="worklight/worklight.css" rel="stylesheet">
+        <link href="jqueryMobile/jquery.mobile-1.4.4.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/mdpimobile.css" media="only screen and (min-width:320px) " rel="stylesheet" type="text/css">
+        <link href="css/Login_style.css" rel="stylesheet">
+    		<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    		 -->
+    		<!-- CSS in case when no  condition for media fullfilled -->
+        <link href="css/ldpimobile.css" media="only screen and (min-width:240px) " rel="stylesheet" type="text/css">
+        <link href="css/mdpimobile.css" media="only screen and (min-width:320px) " rel="stylesheet" type="text/css">
+        <link href="css/hdpimobile.css" media="only screen and (min-width:480px) " rel="stylesheet" type="text/css">
+        <link href="css/xhdpimobile.css" media="only screen and (min-width:640px) " rel="stylesheet" type="text/css">
+        <link href="css/global.css" rel="stylesheet" type="text/css">
+        <script>
+		// Define WL namespace.
+		var WL = WL ? WL : {};
+		/**
+		 * WLClient configuration variables.
+		 * Values are injected by the deployer that packs the gadget.
+		 */
+		 WL.StaticAppProps = {
+   "APP_DISPLAY_NAME": "DEAlerts",
+   "APP_ID": "DEAlerts",
+   "APP_SERVICES_URL": "\/apps\/services\/",
+   "APP_VERSION": "3.5",
+   "ENVIRONMENT": "android",
+   "LOGIN_DISPLAY_TYPE": "embedded",
+   "WORKLIGHT_NATIVE_VERSION": "1388915884",
+   "WORKLIGHT_PLATFORM_VERSION": "6.2.0.00.20141002-1640",
+   "WORKLIGHT_ROOT_URL": "\/apps\/services\/api\/DEAlerts\/android\/"
+};
+</script>
+		<script src="worklight/cordova.js"></script>
+		<script src="worklight/wljq.js"></script>
+		<script src="worklight/worklight.js"></script>
+		<script src="worklight/checksum.js"></script>
+		<script>window.$ = window.jQuery = WLJQ;</script>
+		    <script src="jqueryMobile/jquery.mobile-1.4.4.js"></script>
+    		<script src="jqueryMobile/jssor.slider-20.mini.js"></script>
+    		<script src="jqueryMobile/jquery.mobile.dynamic.popup.js"></script>
+    		<script src="js/scroll.js"></script>
+    </head>
+    <body style="display: none;">
+    		<!-- /Login -->
+        <div data-role="page" data-theme="a" id="login">
+            <div id="loginMsg"></div>
+            <section class="ui-content" data-role="main" id="lcontent">
+                <div>
+                    <img class="homeicon" src="images/applogo.png">
+			            <h1 class="homeTitle"> Delivery Excellence Alerts</h1>
+                </div>
+                <form onsubmit="javascript:return false;">
+                    <div class="frominputs">
+                        <input id="j_username" name="j_username" placeholder="Username" required="" style="border-radius: 2px !important;border-color: gray !important ; " type="email" value="">
+							<input id="j_password" name="j_password" placeholder="Password" required="" style="border-radius: 2px !important;border-color: gray !important;" type="password" value="">
+							<button class="loginButton " id="loginBtn" style=" border-radius: 0px; border: none;background-color: #144EB9 !important;text-shadow: none; color: #ECECEC;font-size: 17px !important;height: 42px;"> Sign In</button>
+                    </div>
+                </form>
+                <div>
+                    <h1 class="logoTitile"> Powered By</h1>
+                    <img class="ibmicon" src="images/logo_ibm.png">
+			     </div>
+            </section> <!-- content -->
+		<!--- footer - -->
+        </div> 
+	<!-- /Login -->
+        <div data-role="page" id="cmnDashBoard">
+            <div class="DEHeader" data-role="header">
+                <a class="backicon" data-direction="reverse" data-transition="slide" href="#sectorPage"></a>
+                <h1 class="cmndashclass">Common <br>Dashboard</h1>
+                <a class="menuicon ui-btn-right" data-transition="slide" href="#panelsect"></a>
+            </div>
+            <div class="panel right menupanel" data-display="overlay" data-position="right" data-role="panel" id="panelsect">
+            </div> 
+            <div class="DEHeader DEsubheader" data-role="header">
+                <a class="legendicon" data-transition="slide" href="#legendpage" id="sectlegend" onclick="getlegenddata()"></a>
+                <h2 style="font-size: 16px !important;">Sectors</h2>
+            </div>
+            <div data-role="content" id="KPIsectorSlide"> 
+            </div>
+        </div>
+        <div data-role="page" id="legendpage">
+            <div class="DEHeader" data-role="header">
+                <a class="backicon legendback" data-direction="reverse" data-transition="slide" href="#"></a>
+                <h1 class="cmndashclass">Common <br>Dashboard</h1>
+                <a class="menuicon ui-btn-right" data-transition="slide" href="#panelleg"></a>
+            </div>
+            <div class="panel right menupanel" data-display="overlay" data-position="right" data-role="panel" id="panelleg">
+            </div>
+            <div class="DEHeader DEsubheader" data-role="header">
+                <h2 style="font-size: 16px !important;">Legend</h2>
+            </div>
+            <div data-role="content" id="KPIlegenddata"> 
+            </div>
+        </div>
+<!--  Common Dashboard Pal View page starts -->
+        <div data-role="page" id="cmnDashBoardpal">
+            <div class="DEHeader" data-role="header">
+                <a class="backicon" data-direction="reverse" data-transition="slide" href="#cmnDashBoard"></a>
+                <h1 class="cmndashclass">Common <br> Dashboard</h1>
+                <a class="menuicon ui-btn-right" data-transition="slide" href="#panelpal"></a>
+            </div>
+            <div class="panel right menupanel" data-display="overlay" data-position="right" data-role="panel" id="panelpal">
+            </div>
+            <div class="DEHeader DEsubheader" data-role="header">
+                <a class="legendicon" data-transition="slide" href="#legendpage" id="pallegend" onclick="getlegenddata()"></a>
+                <h2 id="dmndashflownamesPAL" style="font-size: 12px !important;">PAL</h2>
+            </div>
+            <div data-role="content" id="KPIsectorSlidePAL">
+            </div>
+        </div>
+<!-- PM View page starts -->
+        <div data-role="page" id="cmnDashBoardpm">
+            <div class="DEHeader" data-role="header">
+                <a class="backicon" data-direction="reverse" data-transition="slide" href="#cmnDashBoardpal"></a>
+                <h1 class="cmndashclass">Common <br> Dashboard</h1>
+                <a class="menuicon ui-btn-right" data-transition="slide" href="#panelpm"></a>
+            </div>
+            <div class="panel right menupanel" data-display="overlay" data-position="right" data-role="panel" id="panelpm">
+            </div>
+            <div class="DEHeader DEsubheader" data-role="header">
+                <a class="legendicon" data-transition="slide" href="#legendpage" id="pmlegend" onclick="getlegenddata()"></a>
+                <h2 id="dmndashflownamesPM" style="font-size: 12px !important;">PM</h2>
+            </div>
+            <div data-role="content" id="KPIsectorSlidePM">
+            </div>
+        </div>
+        <!-- CMMI Dashboard page starts -->
+        <div data-role="page" id="cmmiDashBoard">
+            <div class="DEHeader" data-role="header">
+                <a class="backicon" data-direction="reverse" data-transition="slide" href="#sectorPage"></a>
+                <h1 class="cmndashclass">CMMI <br>Dashboard</h1>
+                <a class="menuicon ui-btn-right" data-transition="slide" href="#cmmipanelsect"></a>
+            </div>
+            <div class="panel right menupanel" data-display="overlay" data-position="right" data-role="panel" id="cmmipanelsect">
+            </div> 
+            <div class="ui-content" data-role="main" style="text-align: center;">
+                <input id="cmmisearch" placeholder="Search by projects" type="search"> 
+            </div> 
+            <div data-role="content" id="cmmiDashSlide"> 
+            </div>
+        </div>
+	<!-- Sector Page Starts -->
+        <div data-role="page" id="sectorPage" style="background-color: #ECECEC;">
+            <div class="DEHeader" data-role="header">
+                <a class="backicon backlanding" data-direction="reverse" data-transition="slide" href="#"></a>
+                <h1>Sectors</h1>
+                <a class="menuicon ui-btn-right" data-transition="slide" href="#panel-001"></a>
+            </div>
+            <div class="panel right menupanel" data-display="overlay" data-position="right" data-role="panel" id="panel-001">
+            </div>
+			<!--  <button id="refresh">Refresh</button> -->
+		<!-- 	<div class="ui-field-contain">
+     <input name="srchtext1" id="srchtext1" value="" type="text" data-clear-btn="true" class="search" placeholder="Search by project name" />
+  </div> -->
+            <div class="ui-content" data-role="main" style="text-align: center;">
+                <ul data-filter="true" data-filter-placeholder="Search by projects" data-filter-reveal="true" data-inset="true" data-role="listview" id="projectnames">
+                </ul>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a sectorgrids" id="COMMPage">
+                        <div class="custom-btn" id="Comm">
+                            <span></span>
+                        </div>
+                        <a data-transition="slide" href="#sectorResultPage"><img src="images/Communication.png"></a>
+                        <br>  
+						<!-- Font used Arial Baltic, Bold, Size 15 -->
+                    </div>
+                    <div class="ui-block-b sectorgrids" id="DISTPage">
+                        <div class="custom-btn" id="Dist">
+                            <span></span>
+                        </div>
+                        <a data-transition="slide" href="#sectorResultPage"><img src="images/Distribution.png"></a>
+					<!-- Font used Arial Baltic, Bold, Size 15 -->
+                    </div>
+                </div>
+                <div style="height: 10px;"></div>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a sectorgrids" id="FSSPage">
+                        <div class="custom-btn" id="FSS">
+                            <span></span>
+                        </div>
+                        <a data-transition="slide" href="#sectorResultPage"><img src="images/FSS.png"></a>
+                        <br>
+					<!-- Font used Arial Baltic, Bold, Size 15 -->
+                    </div>
+                    <div class="ui-block-b sectorgrids" id="IGAPage">
+                        <div class="custom-btn" id="IGA">
+                            <span>6</span>
+                        </div>
+                        <a data-transition="slide" href="#sectorResultPage"><img src="images/IGA.png"></a>
+					<!-- Font used Arial Baltic, Bold, Size 15 -->
+                    </div>
+                    <br>
+                </div>
+                <div style="height: 10px;"></div>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a sectorgrids" id="INDUSPage">
+                        <div class="custom-btn" id="Indus">
+                            <span>6</span>
+                        </div>
+                        <a data-transition="slide" href="#sectorResultPage"><img src="images/Industrial.png"></a>
+                        <br>
+					<!-- Font used Arial Baltic, Bold, Size 15 -->
+                    </div>
+                    <div class="ui-block-b sectorgrids" id="PUBLICPage">
+                        <div class="custom-btn" id="Public">
+                            <span>6</span>
+                        </div>
+                        <a data-transition="slide" href="#sectorResultPage"><img src="images/Public.png"></a>
+					<!-- Font used Arial Baltic, Bold, Size 15 -->
+                    </div>
+                    <br>
+                </div>
+			<!-- Cross sector box -->
+                <div class="ui-grid-a">
+                    <div class="ui-block-a sectorgrids" id="CROSSSECTPage">
+                        <div class="custom-btn" id="Cross">
+                            <span></span>
+                        </div>
+                        <a data-transition="slide" href="#sectorResultPage"><img src="images/CrossSector.png"></a>
+                        <br>
+					<!-- Font used Arial Baltic, Bold, Size 15 -->
+                    </div>
+                </div> 
+				<!-- cross sector box ends -->
+                <button class="SubscribeButton" onclick="getSecretDataPush()" style="border-radius: 10px; border: none;background-color: #144EB9 !important;text-shadow: none; color: #ECECEC;font-size: 17px !important;height: 42px;margin-top:8%; width: 100%;">Subscribe for Notifications</button>
+			<!-- <div id="ResponseDiv"></div> -->
+            </div>
+        </div>
+	<!-- Sector Page Ends -->
+	<!-- Communication Page Starts -->
+        <div data-role="page" id="communicationPage">
+            <div class="DEHeader" data-role="header">
+                <a class="backicon" data-direction="reverse" data-transition="slide" href="#sectorPage"></a>
+                <h1>Projects</h1>
+                <a class="menuicon" href="#panel-01"></a>
+            </div>
+            <div class="DEHeader DEsubheader" data-role="header">
+                <a class="pieCharticon" data-transition="slide" href="#communicationGraphPage"></a>
+                <h2 style="font-size: 14px !important;">Communication</h2>
+                <a class="searchicon" href="#"></a>
+            </div>
+				<!-- Menu Panel Starts -->
+            <div class="panel right menupanel" data-display="overlay" data-position="right" data-role="panel" id="panel-01">
+            </div>
+		        <!-- Menu Panel Ends -->
+            <div data-role="content">
+                <ul data-role="listview">
+                    <li id="">
+                        <a data-transition="slide" href="#AlertPage">
+                            <div class="styles">
+                                <div style="float:left"> 
+                                    <img height="20px" src="images/tickgreen.PNG" width="20px">
+		     					<!-- <strong>Vodafone Spain</strong>
+		     					<p>Custom AMS | SPGI</p>
+								<p>	PAL:Name</p>
+								<p>	PM:Name</p> -->
+								<strong>Irish Water</strong>
+                                    <p>Oracle | Ireland</p>
+                                    <p>	PAL:Avroneil Guha/India/IBM</p>
+                                    <p>	PM:Narayan C Sarkar/India/IBM</p>
+                                </div>
+                                <div style="float:right">
+                                    <p>3 hrs</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li id="">
+                        <a data-transition="slide" href="#">
+                            <div class="styles">
+                                <div style="float:left"> 
+                                    <img height="20px" src="images/exclaimationRed.PNG" width="20px">
+		     					UoM-Escalated
+		     					<p>GD Service Line | GEO</p>
+                                    <p>	PAL:Name</p>
+                                    <p>	PM:Name</p>
+                                </div>
+                                <div style="float:right;">
+                                    <p>2 days</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li id="">
+                        <a href="#">
+                            <div class="styles">
+                                <div style="float:left"> 
+                                    <img height="20px" src="images/exclaimationOrange.PNG" width="20px">
+		     					UoM-Potential
+		     					<p>GD Service Line  GEO</p>
+                                    <p>	PAL:Name</p>
+                                    <p>	PM:Name</p>
+                                </div>
+                                <div style="float: right;">
+                                    <p>5 days</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    		<!-- Communication Page Ends -->
+    		<!-- Communication Graph Page Starts -->
+        <div data-role="page" id="communicationGraphPage">
+            <div class="DEHeader" data-role="header">
+                <a class="backicon" data-direction="reverse" data-transition="slide" href="#sectorPage"></a>
+                <h1>Projects</h1>
+                <a class="menuicon" href="#panel-02"></a>
+            </div>
+            <div class="DEHeader DEsubheader" data-role="header">
+                <a class="listicon" data-direction="reverse" data-transition="slide" href="#communicationPage"></a>
+                <h2 style="font-size: 14px !important;">Communication</h2>
+            </div>
+                 <!-- Menu Panel Starts -->
+            <div class="panel right menupanel" data-display="overlay" data-position="right" data-role="panel" id="panel-02">
+            </div>
+		         <!-- Menu Panel Ends -->
+            <div data-role="content" style="background-color: #E7E6EC;">
+                <div style="text-align: center;">
+                    <p>
+                        <b>Sector Health</b>
+                    </p>
+                    <br>
+                    <br>
+                    <img src="images/Chart.png">
+    		                <br>
+                    <span style="font-size: 10px"><img height="10px" src="images/greenMarker.JPG" style="padding-right:5px" width="10px">Good</span>
+                    <br>
+                    <span style="font-size: 10px;padding-left:69px;"><img height="10px" src="images/yellowMarker.JPG" style="padding-right:5px" width="10px">Potential Escalation </span>
+                    <br>
+                    <span style="font-size: 10px;padding-left:23px;"><img height="10px" src="images/redMarker.JPG" style="padding-right:5px" width="10px">Escalation</span>
+                </div>
+            </div>
+        </div>
+    		<!-- Communication Graph Page Ends -->
+	<!-- AlertPage Graph Page Starts -->
+        <div data-role="page" id="AlertPage">
+            <div class="DEHeader" data-role="header">
+                <a class="backicon" data-direction="reverse" data-transition="slide" href="#communicationPage"></a>
+                <h1>Alerts</h1>
+                <a class="menuicon" href="#panel-03"></a>
+            </div>
+         <!-- Menu Panel Starts -->
+            <div class="panel right menupanel" data-display="overlay" data-position="right" data-role="panel" id="panel-03">
+            </div>
+		 <!-- Menu Panel Ends -->
+            <div data-role="content" style="padding: 0px; overflow:hidden">
+                <div class="DEHeader DEsubheader" data-role="header">
+                    <a class="abc" href="#"></a>
+                    <h2>UoM Escalated</h2>
+                    <a class="alerticon" href="#ForumPage"></a>
+                </div>    				
+                <ul>
+                    <li style=" padding: 15px;">
+                        <p>Oracle | Ireland </p>
+                        <p>PAL : Avroneil Guha/India/IBM </p>
+                        <p>PM : Narayan C Sarkar/India/IBM </p>
+                        <p>Status : Escalated <img height="17px" src="images/exclaimationRed.PNG" width="16px"> </p>
+                        <p>Identified : 1 Oct 2014 </p>
+                    </li>
+                </ul>
+                <div id="tableMenu" style="height:60px;">
+                    <div class="DEHeader">
+                        <h2 class="padding">Issues &nbsp;&nbsp;/&nbsp;&nbsp;Risks&nbsp;&nbsp;/&nbsp;&nbsp;Action Items</h2>
+                    </div>        	
+                </div>
+                <div id="tableMenuDetails">
+                    <ul data-role="listview">
+                        <li>
+                            <p class="padding">Logged By</p> 
+                            <p class="padding">
+                                <strong>xxxxx@xx.in.ibm.com</strong>
+                            </p>
+                            <div class="ui-li-aside ui-li-desc">3 hrs</div>
+                        </li>
+                        <li>
+                            <p class="padding" style="white-space: normal !important;"> 
+                                <strong>Concerns raised on issue with code deployment in Pre Prod for two modules that had not completed UAT and should not have been deployed on Pre Prod.
+				        			    </strong>
+                            </p>
+                            <p class="padding" style="white-space: normal !important;"> There has been a successful Go Live on 22nd Oct.Corrective and Preventive actions have been taken to closure.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+	<!-- ForumPage Graph Page Starts -->
+        <div data-role="page" id="ForumPage">
+            <div class="DEHeader" data-role="header">
+                <a class="backicon" data-direction="reverse" data-transition="slide" href="#AlertPage"></a>
+                <h1>Forum</h1>
+                <a class="menuicon" href="#panel-04"></a>
+            </div>
+            <div class="DEHeader DEsubheader" data-role="header">
+                <h2>UoM Escalated</h2>
+            </div>
+        <!-- Menu Panel Starts -->
+            <div class="panel right menupanel" data-display="overlay" data-position="right" data-role="panel" id="panel-04">
+            </div>
+		 <!-- Menu Panel Ends -->
+            <div data-role="content" style="padding: 0px; overflow: hidden">
+                <p class="forumheader">+ Create New Topic</p>
+                <ul data-role="listview">
+                    <li>
+                        <img src="images/personphoto.jpg"><p>
+                            <strong>Sreejit Roy created a topic named Project xxxxx escalation in the Delivery Excellence forum.</strong>
+                        </p>
+                        <p>13 Mar 2015, 9:00 AM</p>
+                    </li>
+                    <li>
+                        <ul data-role="listview" style="padding-left: 50px;">
+                            <li>
+                                <img src="images/chat.png"><b>Project xxxxx escalations</b>
+                                <p style="white-space: normal !important;">Why
+										does it take so long to close the action items?</p>
+                                <p>13 Mar 2015, 9:00 AM</p>
+                            </li>
+                            <li>
+                                <img src="images/manIcon.png">
+							        <b>John P. Samuel</b>
+                                <p style="white-space: normal !important;">There
+										was a lag in identifying the necessary...</p>
+                                <p>13 Mar 2015, 11:00 AM</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+	<!-- IGA Page Starts -->
+        <div data-role="page" id="igaPage">
+            <div class="DEHeader" data-role="header">
+                <a class="backicon" data-direction="reverse" data-transition="slide" href="#sectorPage"></a>
+                <h1>Projects</h1>
+                <a class="menuicon" href="#panel-05"></a>
+            </div>
+            <div class="DEHeader DEsubheader" data-role="header">
+                <a class="pieCharticon" data-transition="slide" href="#"></a>
+                <h2 style="font-size: 14px !important;">IGA</h2>
+                <a class="searchicon" href="#"></a>
+            </div>
+        <!-- Menu Panel Starts -->
+            <div class="panel right menupanel" data-display="overlay" data-position="right" data-role="panel" id="panel-05">
+            </div>
+		 <!-- Menu Panel Ends -->
+            <div data-role="content">
+                <ul data-role="listview" id="4listview">
+                    <li id="">
+                        <a data-transition="slide" href="#">
+                            <div class="styles">
+                                <div style="float:left"> 
+                                    <div id="igaListHeader"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    		<!-- IGA Page Ends -->
+	<!-- Financial Page Starts -->
+        <div data-role="page" id="fssPage">
+            <div class="DEHeader" data-role="header">
+                <a class="backicon" data-direction="reverse" data-transition="slide" href="#sectorPage"></a>
+                <h1>Projects</h1>
+                <a class="menuicon" href="#panel-06"></a>
+            </div>
+            <div class="DEHeader DEsubheader" data-role="header">
+                <a class="pieCharticon" data-transition="slide" href="#"></a>
+                <h2 style="font-size: 14px !important;">FINANCIAL</h2>
+                <a class="searchicon" href="#"></a>
+            </div>
+          <!-- Menu Panel Starts -->
+            <div class="panel right menupanel" data-display="overlay" data-position="right" data-role="panel" id="panel-06">
+            </div>
+		  <!-- Menu Panel Ends -->
+            <div data-role="content">
+                <ul class="styles" data-role="listview" id="3listview">
+	        			<!-- <li id="">
+	      					<a href="#" data-transition="slide">
+	      						<div class="styles">
+		     					<div style="float:left"> 
+								<div id="fssListHeader"></div>
+								</div>
+		     					</div>
+		     				</a>
+	        			</li>
+	                   -->
+                </ul>
+            </div>
+        </div>
+    		<!-- fss Page Ends -->
+<!-- Industrial Page Starts -->
+        <div data-role="page" id="indusPage">
+            <div class="DEHeader" data-role="header">
+                <a class="backicon" data-direction="reverse" data-transition="slide" href="#sectorPage"></a>
+                <h1>Projects</h1>
+                <a class="menuicon" href="#panel-07"></a>
+            </div>
+            <div class="DEHeader DEsubheader" data-role="header">
+                <a class="pieCharticon" data-transition="slide" href="#"></a>
+                <h2 style="font-size: 14px !important;">Industrial</h2>
+                <a class="searchicon" href="#"></a>
+            </div>
+				<!-- Menu Panel Starts -->
+            <div class="panel right menupanel" data-display="overlay" data-position="right" data-role="panel" id="panel-07">
+            </div>
+		 <!-- Menu Panel Ends -->
+        </div>	
+<!-- Cross Sector Page starts -->	
+        <div data-role="page" id="crosssectPage">
+            <div class="DEHeader" data-role="header">
+                <a class="backicon" data-direction="reverse" data-transition="slide" href="#sectorPage"></a>
+                <h1>Projects</h1>
+                <a class="menuicon" href="#panel-13"></a>
+            </div>
+            <div class="DEHeader DEsubheader" data-role="header">
+                <a class="pieCharticon" data-transition="slide" href="#"></a>
+                <h2 style="font-size: 14px !important;">Cross Sector</h2>
+                <a class="searchicon" href="#"></a>
+            </div>		
+        <!-- Menu Panel Starts -->
+            <div class="panel right menupanel" data-display="overlay" data-position="right" data-role="panel" id="panel-13">
+            </div>
+		 <!-- Menu Panel Ends -->
+            <div data-role="content">
+                <ul class="styles" data-role="listview" id="5listview">
+                </ul>
+            </div>
+        </div>
+    		<!-- Industrial Page Ends -->
+	        <!-- Distribution Page Starts -->
+        <div data-role="page" id="distPage">
+            <div class="DEHeader" data-role="header">
+                <a class="backicon" data-direction="reverse" data-transition="slide" href="#sectorPage"></a>
+                <h1>Projects</h1>
+                <a class="menuicon" href="#panel-08"></a>
+            </div>
+            <div class="DEHeader DEsubheader" data-role="header">
+                <a class="pieCharticon" data-transition="slide" href="#"></a>
+                <h2 style="font-size: 14px !important;">Distribution</h2>
+                <a class="searchicon" href="#"></a>
+            </div>
+          <!-- Menu Panel Starts -->
+            <div class="panel right menupanel" data-display="overlay" data-position="right" data-role="panel" id="panel-08">
+            </div>
+		  <!-- Menu Panel Ends -->
+            <div data-role="content">
+                <ul class="styles" data-role="listview" id="2listview">
+                </ul>
+            </div>
+        </div>
+    		<!-- Distribution Page Ends -->
+    		        <!-- COMMON Page Starts -->
+        <div data-role="page" id="sectorResultPage">
+            <div class="DEHeader" data-role="header">
+                <a class="backicon" data-direction="reverse" data-transition="slide" href="#sectorPage"></a>
+                <h1>Projects</h1>
+                <a class="menuicon" href="#panel-09"></a>
+            </div>
+            <div class="DEHeader DEsubheader" data-role="header">
+                <a class="emptyfilter" data-transition="slide" href="#filterpage" id="filtericon"></a>
+                <h2 style="font-size: 14px !important;">Topics</h2>
+					<!-- <a href="#" class="searchicon"></a> -->
+            </div>
+           <!-- Menu Panel Starts -->
+            <div class="panel right menupanel" data-display="overlay" data-position="right" data-role="panel" id="panel-09">
+            </div>
+		   <!-- Menu Panel Ends -->
+            <div data-role="content">
+                <form class="ui-filterable">
+                    <input data-type="search" id="filterBasic-input" placeholder="Search by projects..">
+                </form>
+                <ul class="styles" data-filter="true" data-input="#filterBasic-input" data-role="listview" id="SectorResultList">
+                </ul>
+            </div>
+        </div>
+    		<!-- COMMON Page Ends -->
+           <!-- DetailPage Graph Page Starts -->
+        <div data-role="page" id="detailPage">
+            <div class="DEHeader" data-role="header">
+                <a class="backicon" data-direction="reverse" data-transition="slide" href="#sectorResultPage"></a>
+                <h1>Alerts</h1>
+                <a class="menuicon " href="#panel-10"></a>
+            </div>
+       <!-- Menu Panel Starts -->
+            <div class="panel right menupanel" data-display="overlay" data-position="right" data-role="panel" id="panel-10">
+            </div>
+		 <!-- Menu Panel Ends -->
+            <div data-role="content" style="padding: 0px; overflow:hidden">
+                <div class="DEHeader DEsubheader" data-role="header">
+                    <a class="abc" href="#"></a>
+										<!-- <h2 >UoM Details</h2> -->
+                    <div id="uomNameDiv"></div>
+                    <a class="alerticon updateform" data-transition="slide" href="#form2page"></a>
+                </div>    				
+                <ul id="detailPageDiv" style="font-size:84% !important">
+                              <!-- <li style=" padding: 15px;">
+                                    <p >Oracle | Ireland </p>
+				    				<p >PAL : Avroneil Guha/India/IBM </p>
+				    				<p >PM : Narayan C Sarkar/India/IBM </p>
+				    				<p >Status : Escalated <img src="images/exclaimationRed.PNG" width="16px" height="17px" /> </p>
+				    				<p >Identified : 1 Oct 2014 </p>
+                              </li> -->
+                </ul>
+                <div id="tableMenu" style="height:60px;">
+                    <div class="DEHeader">
+                        <h2 class="padding">Issues &nbsp;&nbsp;/&nbsp;&nbsp;Risks&nbsp;&nbsp;/&nbsp;&nbsp;Action Items</h2>
+                    </div>        	
+                </div>
+                <div id="tableMenuDetails">
+                    <ul data-role="listview">
+                        <li>
+                            <p class="padding">Logged By</p> 
+                            <p class="padding">
+                                <strong id="loggeduser">xxxxx@xx.in.ibm.com</strong>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="padding" style="white-space: normal !important;"> 
+                                <strong id="concerns">Concerns raised on issue with code deployment in Pre Prod for two modules that had not completed UAT and should not have been deployed on Pre Prod.
+				        			    </strong>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div style="padding-top:15px;">
+                    <div class="DEHeader" style="height:40px !important;">
+                        <h2 class="padding">UPDATES</h2>
+                    </div>
+                    <ul class="styles" data-role="listview" id="updateList" style="padding-top:20px;padding-left:10px;">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    		<!--Form Page starts  -->
+        <div data-role="page" id="formPage">
+            <div class="DEHeader" data-role="header">
+                <a class="backicon" data-direction="reverse" data-transition="slide" href="#sectorPage"></a>
+                <h1 style="font-size: 18px !important;">DE Alert Form</h1>
+                <a class="menuicon" href="#panel-55"></a>
+            </div>
+				 <!-- Menu Panel Starts -->
+            <div class="panel right menupanel" data-display="overlay" data-position="right" data-role="panel" id="panel-55">
+            </div>
+		 <!-- Menu Panel Ends -->
+            <div data-role="content" style="padding: 15px">
+                <form id="sectorFormV" style="padding: 20px !important;">
+    				Sector <span style="color:red">*</span> 
+    				<select id="SectorSelect" required=""> 	
+    				<option value="">Select Sector</option>				
+    				</select>
+    				Sector Leader <span style="color:red">*</span><input id="SectorLead" required="" type="text">
+    				Sector DE Leader <span style="color:red">*</span><input id="SectorDELead" required="" type="text">
+                    <br>
+                    <hr>
+                    <br>
+    				Project UoM <span style="color:red">*</span>
+    				<select id="UoMSelect" required=""> 
+    				<option value="">Select Project</option>					
+    				</select>
+    				Client  <span style="color:red">*</span><input id="ClientName" required="" type="text">
+    				Service Line  <span style="color:red">*</span><input id="Serviceline" required="" type="text">    				
+    				SAL <span style="color:red">*</span><input id="SALname" required="" type="text">
+    				GEO <span style="color:red">*</span><input id="GEOname" required="" type="text">
+    				GDC PAL <span style="color:red">*</span><input id="GDCPalName" required="" type="text">
+    				GDC PM <span style="color:red">*</span><input id="GDCPamName" required="" type="text">
+    				Identified Date <span style="color:red">*</span><input id="DateField" required="" type="date">
+    				FROM / TO <input id="fromTo" type="text">
+    				Key Concerns <span style="color:red">*</span> <textarea cols="20" id="Concerns" required="" rows="3"></textarea>
+    				Current Status <span style="color:red">*</span>
+    				<select id="StatusSelect" required=""> 
+    				<option value="#">Select a Status</option>
+    				   <option value="ESCALATED">ESCALATED</option>
+    				   <option value="POTENTIAL">POTENTIAL</option>
+    				   <option value="CLOSED">CLOSED</option>
+    				   <!-- <!option value="EARLY WARNING">EARLY WARNING</option>
+    				   <!option value="FOCUS ON WATCH">FOCUS ON WATCH</option>
+    				   <!option value="BAILED OUT">BAILED OUT GREY</option>
+    				   <!option value="ESCALATION CLOSED">ESCALATION CLOSED</option>
+    				   <!option value="PROJECT CLOSED">PROJECT CLOSED</option>
+    				   <!option value="PT.ESCALATION">POTENTIAL ESCALATION</option>
+    				   <!option value="TROUBLED & ESCALATED">TROUBLED & ESCALATED</option>
+    				   <!option value="EARLY WARNING & ESCALATED">EARLY WARNING & ESCALATED</option>
+    				   <!option value="FOCUS ON WATCH & ESCALATED">FOCUS ON WATCH & ESCALATED</option>
+    				   <!option value="TROUBLED & PT.ESCALATION">TROUBLED & POTENTIAL ESCALATION</option>
+    				   <!option value="EARLY WARNING & PT.ESCALATION">EARLY WARNING & POTENTIAL ESCALATION</option>
+    				   <!option value="FOCUS ON WATCH & PT.ESCALATION">FOCUS ON WATCH & POTENTIAL ESCALATION</option> -->					
+    				</select>
+    				Delivery Issues?
+    				<div class="ui-checkbox" id="issues">
+                        <label class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-checkbox-off" for="checkbox-enhanced">Yes</label>
+						    <input data-enhanced="true" id="checkbox-enhanced" name="checkbox-enhanced" type="checkbox">
+                    </div>
+    				Updates <span style="color:red">*</span> <textarea cols="20" id="Updates" required="" rows="3"></textarea>
+    				Notify 
+    				   	<div class="ui-checkbox">
+                        <label class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-checkbox-off" for="checkbox-enhanced">Yes</label>
+						    <input checked data-enhanced="true" id="notify" name="notify" type="checkbox">
+                    </div>
+    				Additional members to be notified <input id="additional" type="text">
+                    <br>
+                    <input id="SubmitBtn" type="submit" value="Submit Form">
+                </form>
+            </div>
+        </div>
+    		<!-- Form Page Ends -->
+        <div data-role="page" id="form2page">
+            <div class="DEHeader" data-role="header">
+                <a class="backicon" data-direction="reverse" data-transition="slide" href="#detailPage"></a>
+                <h1>Update</h1>
+                <a class="menuicon " href="#panel-11"></a>
+            </div>
+          <!-- Menu Panel Starts -->
+            <div class="panel right menupanel" data-display="overlay" data-position="right" data-role="panel" id="panel-11">
+            </div>
+            <div data-role="content" style="padding: 15px; padding: 1em !important">
+    				UoM Name:<span class="uomName123" id="uomName12"></span>
+                <br>
+                <br>
+       				 Escalation Status <select class="ESC_status" id="Escalation_StatusSelect"> 
+    				<option value="#">SELECT STATUS</option>
+    				   <option value="ESCALATED">ESCALATED</option>
+    				   <option value="POTENTIAL">POTENTIAL</option>
+    				   <option value="CLOSED">CLOSED</option>
+    				   <option value="NONE">NONE</option></select>
+       				<!-- Escalation Status <span style="color:red">*</span> <textarea rows="6" cols="20" id="ESC_Status_Updates1"></textarea> -->
+    				Updates <span style="color:red">*</span> <textarea cols="20" id="Updates1" rows="6"></textarea>
+    				Notify  
+    				   	 <div class="ui-checkbox">
+                    <label class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-checkbox-off" for="checkbox-enhanced">Yes</label>
+						    <input data-enhanced="true" id="notify1" name="notify" type="checkbox">
+                </div> 
+    				Additional members to be notified <input id="additional1" type="text">
+                <br>
+                <button id="SubmitBtn2" type="submit">Submit Comments</button>
+            </div>
+        </div> 
+    		  <!-- Menu Panel Ends -->
+		  <!-- FAQPage starts here -->
+        <div data-role="page" id="FAQPage">
+            <div class="DEHeader" data-role="header">
+                <a class="backicon" data-direction="reverse" data-transition="slide" href="#sectorPage"></a>
+                <h1>FAQs</h1>
+                <a class="menuicon" href="#panel-12"></a>
+            </div>
+            <div class="DEHeader DEsubheader" data-role="header">
+                <h2 style="    width: 80%;float: right;    margin-top: -18px; margin-right: 17%;">
+                    <input id="srchtext" type="text">
+                </h2>
+                <a class="searchicon ui-btn-right" href="#" id="srchbtn"></a>
+            </div>
+            <div class="panel right menupanel" data-display="overlay" data-position="right" data-role="panel" id="panel-12">
+            </div>
+            <div class="ui-content" style="display: inline !important;">
+			<!-- <ul   id="FAQdatacolset"> 
+			<li>
+			<h3></h3>
+			<div data-role="collapsibleset" data-theme="a" data-content-theme="a"
+				data-collapsed-icon="arrow-rs" data-expanded-icon="arrow-ds" >
+				<div data-role="collapsible">
+					<h3>Please login again</h3>
+					<p class="bulletimage"></p>
+				</div>
+			</div>
+			</li>
+			</ul> -->
+                <h3 class="cmnHeaderSearch" style="display: none;"></h3>
+                <div class="cmnCollapsibleContentmain" data-collapsed-icon="arrow-rs" data-content-theme="a" data-expanded-icon="arrow-ds" data-role="collapsibleset" data-theme="a" id="FAQdatacolset">
+                </div>
+			<!-- <div data-role="footer" data-position="fixed"> -->
+                <button class="mailButton" data-corners="false"><span>Send Mail</span></button>
+            </div>
+        </div>
+		  	  <!-- FAQPage ends here -->
+<!-- Ask support page starts -->
+        <div data-role="page" id="askSupportid">
+            <div class="DEHeader" data-role="header">
+                <a class="backicon backfromsupportchat" data-direction="reverse" data-transition="slide" href="#sectorPage"></a>
+                <h1 class="cmndashclass chatmainheader"></h1>
+                <a class="menuicon ui-btn-right" data-transition="slide" href="#panellaskchat"></a>
+            </div>
+            <div class="panel right menupanel" data-display="overlay" data-position="right" data-role="panel" id="panellaskchat">
+            </div>
+				<!-- <div id="chat">
+       				<div class="chatMessage">
+    		<p>test</p>
+    		<p>test 2</p>
+   					</div>
+   			  </div>
+				 -->
+            <div data-role="content">
+                <div class="chat-box">
+                    <div class="header chatheader">
+                    </div>
+                    <div class="messages" id="messages">
+                        <ul id="userchathostorylistsID">
+                   <!--  <li>
+                        <span class="left"><span style="display: flex; border: none;"><p style="font-size: 11px; float: left; line-height: 6px; color: #144EB9;border: none;text-indent: -4px">from </p></span>Hello</span>
+                        <div class="clear"></div>
+                    </li> 
+                    <li>
+                        <span class="left">Are you there?</span>
+                        <div class="clear"></div>
+                    </li> 
+                    <li>
+                        <span class="left">Thanks for accepting my friend request</span>
+                        <div class="clear"></div>
+                    </li> 
+                    <li>
+                        <span class="right">You Welcome</span>
+                        <div class="clear"></div>
+                    </li> 
+                    <li>
+                        <span class="left">Bye</span>
+                        <div class="clear"></div>
+                    </li>  -->
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <div data-position="fixed" data-role="footer" data-tap-toggle="false">
+                <div style="padding-left: 12px; padding-right: 12px; padding-top: 5px;">
+                    <textarea cols="50" id="txtquerytosubmit" maxlength="2000" placeholder="Enter message" rows="15" style="resize: none;"></textarea>
+                </div>
+                <div style="padding-left: 12px; padding-right: 12px;"> 	 
+                    <button class="chatsubmitBtm" disabled id="SubmitChatusers" style="border-radius: 10px; border: none;background-color: #144EB9 !important;text-shadow: none; color: #ECECEC;font-size: 17px !important; width: 100%;">Send</button>
+                </div>
+            </div>  
+        </div>
+<!-- Ask support page ends -->				
+<!-- Provide support page starts -->
+        <div data-role="page" id="provideSupportid">
+            <div class="DEHeader" data-role="header">
+                <a class="backicon" data-direction="reverse" data-transition="slide" href="#sectorPage"></a>
+                <h1 class="cmndashclass">Provide <br>Support</h1>
+                <a class="menuicon ui-btn-right" data-transition="slide" href="#panellprovidechat"></a>
+            </div>
+            <div class="panel right menupanel" data-display="overlay" data-position="right" data-role="panel" id="panellprovidechat">
+            </div>
+            <div data-role="content" style="padding: 10px !important;">
+                <ul data-inset="true" data-role="listview" id="usersListforProvideSupport">
+                </ul>
+            </div>
+        </div>
+<!-- Ask support page ends -->				
+        <div data-dialog="true" data-role="page" id="filterpage">
+            <div class="ui-content" data-role="main">
+                <form>
+                    <fieldset data-filter="true" data-filter-placeholder="select status.." data-role="controlgroup" id="checkboxlist">
+                        <input data-theme="a" id="checkbox-t-2a" name="checkbox-t-2a" type="checkbox" value="ESCALATED">
+        <label for="checkbox-t-2a">ESCALATED</label>
+        <input data-theme="a" id="checkbox-t-2b" name="checkbox-t-2b" type="checkbox" value="POTENTIAL">
+        <label for="checkbox-t-2b">POTENTIAL</label>
+        <input data-theme="a" id="checkbox-t-2c" name="checkbox-t-2c" type="checkbox" value="TROUBLED">
+        <label for="checkbox-t-2c">TROUBLED</label>
+        <input data-theme="a" id="checkbox-t-2d" name="checkbox-t-2d" type="checkbox" value="OTHERS">
+        <label for="checkbox-t-2d">OTHERS</label>
+        <!--<input name="checkbox-t-2d" id="checkbox-t-2d" value="BAILED OUT" data-theme="a" type="checkbox">
+        <label for="checkbox-t-2d">BAILED OUT GREY</label>
+        <input name="checkbox-t-2e" id="checkbox-t-2e" value="ESCALATION CLOSED" data-theme="a" type="checkbox">
+        <label for="checkbox-t-2e">ESCALATION CLOSED</label>
+        <input name="checkbox-t-2f" id="checkbox-t-2f" value="PROJECT CLOSED" data-theme="a" type="checkbox">
+        <label for="checkbox-t-2f">PROJECT CLOSED</label>
+        <input name="checkbox-t-2g" id="checkbox-t-2g" value="PT.ESCALATION" data-theme="a" type="checkbox">
+        <label for="checkbox-t-2g">POTENTIAL ESCALATION</label>
+        <input name="checkbox-t-2h" id="checkbox-t-2h" value="ESCALATED" data-theme="a" type="checkbox">
+        <label for="checkbox-t-2h">ESCALATED</label>
+         <input name="checkbox-t-2i" id="checkbox-t-2i" value="TROUBLED & ESCALATED" data-theme="a" type="checkbox">
+        <label for="checkbox-t-2i">TROUBLED & ESCALATED</label>
+         <input name="checkbox-t-2j" id="checkbox-t-2j" value="EARLY WARNING & ESCALATED" data-theme="a" type="checkbox">
+        <label for="checkbox-t-2j">EARLY WARNING & ESCALATED</label>
+         <input name="checkbox-t-2k" id="checkbox-t-2k" value="FOCUS ON WATCH & ESCALATED" data-theme="a" type="checkbox">
+        <label for="checkbox-t-2k">FOCUS ON WATCH & ESCALATED</label>
+         <input name="checkbox-t-2l" id="checkbox-t-2l" value="TROUBLED & PT.ESCALATION" data-theme="a" type="checkbox">
+        <label for="checkbox-t-2l">TROUBLED & POTENTIAL ESCALATION</label>
+         <input name="checkbox-t-2m" id="checkbox-t-2m" value="EARLY WARNING & PT.ESCALATION" data-theme="a" type="checkbox">
+        <label for="checkbox-t-2m">EARLY WARNING & POTENTIAL ESCALATION</label>
+         <input name="checkbox-t-2n" id="checkbox-t-2n" value="FOCUS ON WATCH & PT.ESCALATION" data-theme="a" type="checkbox">
+        <label for="checkbox-t-2n">FOCUS ON WATCH & POTENTIAL ESCALATION</label>  -->
+                    </fieldset>
+                    <a data-inline="true" data-role="button" data-theme="b" href="#" id="filterok" onclick="selectedlist();">Ok</a>
+    <a data-inline="true" data-role="button" data-theme="b" href="#sectorResultPage">cancel</a>
+                </form>
+            </div>
+        </div>      
+        <script src="js/initOptions.js"></script>
+      <!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
+	<script src="js/main.js"></script>
+	<script src="js/messages.js"></script>
+	<script src="js/BonD.js"></script>
+	<script src="js/Authen.js"></script>
+	<script src="js/LoginAdapter.js"></script>
+	<script src="js/Base64.js"></script>
+	<script src="js/events.js"></script>
+	 <script src="js/cmnDashBoard.js"></script>
+	 <script src="js/cmmiDashBoard.js"></script>
+	 <script src="js/chatSupport.js"></script>   
+    </body>
+</html>

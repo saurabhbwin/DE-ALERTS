@@ -1,0 +1,557 @@
+
+/* Stylesheet content from css/global.css in folder common */
+/* 
+Collapsible  Styles
+
+ */
+/*	 Licensed Materials - Property of IBM
+	 5725-I43 (C) Copyright IBM Corp. 2006, 2013. All Rights Reserved.
+	 US Government Users Restricted Rights - Use, duplication or
+     disclosure restricted by GSA ADP Schedule Contract with IBM Corp. */
+.widetable {
+    margin-left: 0%;
+    width: 100%;
+    
+        
+}
+
+.cmmitable{
+	margin-left: 0%;
+    width: 100%;
+	
+}
+
+.widepartanle{
+	
+	 overflow: scroll !important;
+	
+}
+
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: none;
+    background: transparent;
+}
+
+
+	
+
+
+.green
+{
+	height: 29px !important;
+    width: 55px!important;
+    padding: 5px;
+}
+
+.cmmigreen
+{
+	height: 70px !important;
+    width: 50px!important;
+    padding: 0px;
+	
+}
+
+
+
+
+.badge {
+        display: inline-block;
+    min-width: 33px !important;
+    height: 22px !important;
+    /* padding: 3px 7px; */
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: #ed1c24;
+    border-radius: -2px;
+    margin-left: 6px;
+}
+
+.providesuppadbge{
+border-radius: 16px !important;
+    line-height: 23px !important;
+    min-width: 25px !important;
+}
+
+.ui-content {
+    border-width: 0px;
+    overflow-y: visible;
+    overflow-x: hidden;
+    padding: 0em !important;
+    font-size: 102% !important;
+}
+
+  
+ .widetable table tr td {
+    margin: 0px;
+    padding: 0px;
+    border: 0px none;
+    outline: 0px none;
+       height: 95px !important;
+    vertical-align: middle !important;
+    background: transparent none repeat scroll 0% 0%;
+  	background-color: #F4F3F2;
+  	color: #8B8883;
+  	text-align: center ;
+   	text-indent: 2px;
+   	font-size: 125% !important;
+  	height:15%
+  	
+   
+}
+
+/* .cmmitable table tr td {
+    margin: 0px;
+    padding: 0px;
+    border: 0px none;
+    outline: 0px none;
+       height: 95px !important;
+    vertical-align: middle !important;
+    background: transparent none repeat scroll 0% 0%;
+  	background-color: #F4F3F2;
+  	color: #8B8883;
+  	text-align: center ;
+   	text-indent: 2px; 
+   	font-size: 125% !important;
+  	height:15%
+  	
+   
+}
+ */
+.cmmitable table tr td {
+    margin: 0px;
+    padding: 0px;
+    border: 0px none;
+    outline: 0px none;
+       height: 100px !important;
+    vertical-align: middle !important;
+    background: transparent none repeat scroll 0% 0%;
+  	background-color: #F4F3F2;
+  	color: #8B8883;
+  	text-align: center;
+   	text-indent: 3px; 
+   	font-size: 125% !important;
+  	height:15%
+  	
+   
+}
+
+tr 
+{
+	height: 15%;
+	font-size: 102% !important;
+}
+
+.widetable table tr th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-indent: 5px !important;
+    vertical-align: middle !important;
+    background-color: #E0DED9;
+    color: #8B8883;
+    font-size: 20px !important;
+    width: 200px;
+    height: 50px;
+}
+
+.cmmitable table tr th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-indent: 5px !important;
+    vertical-align: middle !important;
+    background-color: #E0DED9;
+    color: #8B8883;
+    font-size: 20px !important;
+    width: 200px;
+    height: 50px;
+}
+
+.tabledata{
+	text-align: left !important;
+    font-weight: bold;
+    text-indent: 18px !important;
+    color:blue !important;
+	
+}
+
+.cmmitabledata{
+    width: 50%;
+    text-align: left !important; 
+    text-indent: 4px !important;
+    color: blue !important;
+	
+}
+
+
+#cmnDashBoardpal .tabledata{
+	text-align: left !important;
+    font-weight: bold;
+    text-indent: 5px !important;
+    color:blue !important;
+	
+}
+
+#cmnDashBoardpm .tabledata{
+	text-align: left !important;
+    font-weight: bold;
+    text-indent: 5px !important;
+    color:blue !important;
+	
+}
+
+
+#SubmitChat {
+	background-color: #4A416B;
+	color: white;
+	position: relative;
+    margin-top: 3%;
+}
+
+
+#chat {
+    display: table;
+    height: 400px;
+    width: 100%;
+    border: 2px solid #4A416B;
+    
+}
+
+.chatMessage {
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+ .ui-icon-arrow-rs:after {
+  background: url("../images/plus.png") no-repeat scroll -3px -2px transparent;
+  height: 21px !important;
+  width: 21px !important;
+}
+ .ui-icon-arrow-ds:after {
+  background:url("../images/minus.png") no-repeat scroll -3px -2px transparent;
+  height: 21px !important;
+  width: 21px !important;
+}
+
+.ui-focus , .ui-btn:focus {
+ -moz-box-shadow: none !important;
+ -webkit-box-shadow: none !important;
+ box-shadow: none !important;
+}
+
+.ui-collapsible .ui-btn {
+     background: -webkit-linear-gradient(top, rgb(2, 170, 225) 0%, rgb(1, 111, 165) 60%, rgb(0, 75, 129) 100%);
+		background: -o-linear-gradient(top, rgb(2, 170, 225) 0%, rgb(1, 111, 165) 60%, rgb(0, 75, 129) 100%);
+		background: -ms-linear-gradient(top, rgb(2, 170, 225) 0%, rgb(1, 111, 165) 60%, rgb(0, 75, 129) 100%);
+		background: -moz-linear-gradient(top, rgb(2, 170, 225) 0%, rgb(1, 111, 165) 60%, rgb(0, 75, 129) 100%);
+		background: linear-gradient(to bottom, rgb(2, 170, 225) 0%, rgb(1, 111, 165) 60%, rgb(0, 75, 129) 100%);
+		color:white !important;
+		text-shadow: none  !important;
+		white-space: normal;
+}
+
+.decolmain a {
+     background: #473a67 !important;
+		 
+		color:white !important;
+		text-shadow: none  !important;
+		white-space: normal;
+}
+
+.ui-collapsible .ui-collapsible-heading-collapsed .ui-btn{
+	
+	 background: white !important;
+	 color:black !important;
+	 
+}
+
+.ui-collapsible-content p{
+	
+	white-space: normal !important;
+	  margin-bottom: 10px;
+	 font-size: 14px !important;
+	 	word-wrap: break-word !important; 
+}
+
+.calSubheading{
+  font-size: 15px !important;
+  font-weight: bold !important;
+  line-height: 0px !important;
+    color: #005a77;
+}
+
+.bulletimage{
+    background: url("../images/bullet.png");
+	background-repeat: no-repeat;
+	background-size: 15px 16px;
+	text-indent: 20px;
+ }
+ 
+.cmndashclass{
+	font-size: 18px !important;
+    line-height: 18px !important;
+} 
+
+ 
+ 
+        
+        /* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+        .jssorb05 {
+            position: absolute;
+        }
+        
+        
+        
+       #idlegend table { 
+color: #333;
+font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+border-collapse: collapse;
+border-spacing: 2; 
+}
+
+#idlegend table td, table th { 
+border: 1px solid transparent; /* No more visible border */
+height: 30px; 
+transition: all 0.3s;  /* Simple transition for hover effect */
+}
+
+#idlegend th {
+background: #DFDFDF;  /* Darken header a bit */
+font-weight: bold;
+}
+
+ #idlegend td {
+background: #FAFAFA;
+text-align: left;
+}
+
+
+
+
+/* Cells in even rows (2,4,6...) are one color */ 
+#idlegend tr:nth-child(even) td { background: #F1F1F1; }   
+
+/* Cells in odd rows (1,3,5...) are another (excludes header cells)  */ 
+#idlegend tr:nth-child(odd) td { background: #FEFEFE; }  
+
+#idlegend tr td:hover { background: #666; color: #FFF; } /* Hover cell effect! */
+
+
+        .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 16px;
+            height: 16px;
+            background: url('img/b05.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb05 div { background-position:-7px -7px; }
+        .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+        .jssorb05 .av { background-position: -67px -7px; }
+        .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+        /* jssor slider arrow navigator skin 12 css */
+        /*
+        .jssora12l                  (normal)
+        .jssora12r                  (normal)
+        .jssora12l:hover            (normal mouseover)
+        .jssora12r:hover            (normal mouseover)
+        .jssora12l.jssora12ldn      (mousedown)
+        .jssora12r.jssora12rdn      (mousedown)
+        */
+        .jssora12l, .jssora12r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 30px;
+            height: 46px;
+            cursor: pointer;
+            background: url('img/a12.png') no-repeat;
+            overflow: hidden;
+        }
+        .jssora12l { background-position: -16px -37px; }
+        .jssora12r { background-position: -75px -37px; }
+        .jssora12l:hover { background-position: -136px -37px; }
+        .jssora12r:hover { background-position: -195px -37px; }
+        .jssora12l.jssora12ldn { background-position: -256px -37px; }
+        .jssora12r.jssora12rdn { background-position: -315px -37px; }
+        
+        
+        
+        <!--- CSS FOR CHAT -->
+         .chat-box
+            {
+                width: 350%;
+            }
+
+            .header
+            {
+               padding: 10px;
+			    color: white;
+			    font-size: 12px;
+			    font-weight: bold;
+			    background-color: #4A416B;
+			    text-shadow: none;
+            }
+
+            .messages
+            {
+                padding: 10px;
+                height: 330px;
+                background-color: black;
+                
+                border-width: 1px;
+                border-color: black;
+                border-style: solid;
+                overflow-y: scroll;
+            }
+
+            .messages ul
+            {
+                padding: 0px;
+                list-style-type: none;
+            }
+
+            .messages ul li
+            {
+                height: auto;
+                margin-bottom: 10px;
+                clear: both;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .messages ul li span
+            {
+                display: inline-block;
+                max-width: 220px;
+                background-color: white;
+                padding: 5px;
+                border-radius: 4px;
+                position: relative;
+                border-width: 1px;
+                border-style: solid;
+                border-color: grey;
+                font-size: 12.5px;
+                
+            }
+
+            .messages ul li span.left
+            {
+                float: left;
+            }
+
+            .messages ul li span.left:after
+            {
+                content: "";
+                display: inline-block;
+                position: absolute;
+                left: -8.5px;
+                top: 7px;
+                height: 0px;
+                width: 0px;
+                border-top: 8px solid transparent;
+                border-bottom: 8px solid transparent;
+                border-right: 8px solid white;
+            }
+
+            .messages ul li span.left:before
+            {
+                content: "";
+                display: inline-block;
+                position: absolute;
+                left: -9px;
+                top: 7px;
+                height: 0px;
+                width: 0px;
+                border-top: 8px solid transparent;
+                border-bottom: 8px solid transparent;
+                border-right: 8px solid black;
+            }
+
+            .messages ul li span.right:after
+            {
+                content: "";
+                display: inline-block;
+                position: absolute;
+                right: -8px;
+                top: 6px;
+                height: 0px;
+                width: 0px;
+                border-top: 8px solid transparent;
+                border-bottom: 8px solid transparent;
+                border-left: 8px solid #dbedfe;
+            }
+
+            .messages ul li span.right:before
+            {
+                content: "";
+                display: inline-block;
+                position: absolute;
+                right: -9px;
+                top: 6px;
+                height: 0px;
+                width: 0px;
+                border-top: 8px solid transparent;
+                border-bottom: 8px solid transparent;
+                border-left: 8px solid black;
+            }
+
+            .messages ul li span.right
+            {
+                float: right;
+                background-color: #dbedfe;
+            }
+
+            .clear
+            {
+                clear: both;
+            }
+
+            .input-box
+            {
+                background-color: white;
+                height: 50px;
+                padding: 5px;
+            }
+
+            .input-box textarea
+            {
+                padding: 0px;
+                width: 278px;
+                height: 100%;
+                display: inline-block;
+                outline: 0px;
+                border-width: 0px;
+                resize: none;
+                border-width: 1px;
+                border-color: black;
+                border-style: solid;
+                font-size: 12px;
+                padding: 10px;
+                border-top-width: 0px;
+            }
+            
+            <!-- CSS ENDS  -->
+            
+            
+ 

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Licensed Materials - Property of IBM
+    5725-I43 (C) Copyright IBM Corp. 2011, 2013. All Rights Reserved.
+    US Government Users Restricted Rights - Use, duplication or
+    disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+-->
+<wl:adapter name="formAdapter"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:wl="http://www.worklight.com/integration"
+	xmlns:sql="http://www.worklight.com/integration/sql">
+
+	<displayName>formAdapter</displayName>
+	<description>formAdapter</description>
+	<connectivity>
+		<connectionPolicy xsi:type="sql:SQLConnectionPolicy">
+			<!-- Example for using a JNDI data source, replace with actual data source name -->
+			<!-- <dataSourceJNDIName>java:/data-source-jndi-name</dataSourceJNDIName> -->
+			
+			<!-- Example for using MySQL connector, do not forget to put the MySQL connector library in the project's lib folder -->
+			<dataSourceDefinition>
+				<driverClass>com.ibm.db2.jcc.DB2Driver </driverClass>
+			<!-- 	<url>jdbc:db2://inmbzp4094.in.dst.ibm.com:60004/DEAPPDB</url> 
+				 <user>deinst</user>
+    			<password>deinst</password>  -->
+				<url>jdbc:db2://inmbzp4169.in.dst.ibm.com:60004/DEAPPDB</url>
+			    <user>db2inst1</user>
+    			<password>db2inst1</password> 
+			</dataSourceDefinition>
+		</connectionPolicy>
+		<loadConstraints maxConcurrentConnectionsPerNode="5" />
+	</connectivity>
+
+	<!-- Replace this with appropriate procedures -->
+	<procedure name="procedure1"/>
+	<procedure name="procedure2"/>
+	<procedure name="procedure3"/>
+	<procedure name="procedure4"/>
+	<procedure name="procedure5"/>
+	<procedure name="procedure6"/>
+	<procedure name="procedure7"/>
+	<procedure name="procedure8"/>
+	<procedure name="procedurea"/>
+	<procedure name="procedureServiceLine"/>
+	<procedure name="procedurec"/>
+	<procedure name="procedureService"/>
+	<procedure name="insertUomHeader" />
+	<!-- <procedure name="selectvalue" /> -->
+	<procedure name="insertUomDetails" />
+	<procedure name="procedureUom" />
+	<procedure name="procedureAll" />
+	<procedure name="procedurepn" />
+	<procedure name="procedureuomnames" />
+	<procedure name="checkifpm" />
+	<procedure name="updateUomHeader"></procedure>
+	<procedure name="updateUomDetails"></procedure>
+	<procedure name="procedureadditional"></procedure>
+	<procedure name="procedure20"></procedure>
+	<procedure name="procedure21"></procedure>
+	 
+	
+	
+
+</wl:adapter>

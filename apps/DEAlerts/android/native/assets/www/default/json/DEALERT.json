@@ -1,0 +1,422 @@
+
+{
+  "questions": [
+    { 
+     "name" :"Actuate - Start It Right",
+      "data": [
+        {
+          "key": "<b>What is Actuate?</b>",
+          "ans": "Actuate is a Structured Process for Project Launch. Delivery Excellence team partners with the delivery teams through a structured program called Actuate enabling them to do a right project startup. The word 'Actuate' means setting in motion. Through this program, the PMs starting new projects can leverage a DE facilitated process to assure themselves that the project has been started right. And Actuate ensures a good start to the project by guiding the Project Managers in setting the Project Management System to deliver contractual deliverables. @&Actuate Wiki - https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Project%20Actuate/page/Welcome%20to%20Project%20Actuate   "
+        },
+        {
+          "key": "<b>Is Actuate a DE activity?</b>",
+          "ans": "Actuate is a Project activity - Actuate Program under DE function facilitates the Project launch activities for the Delivery Projects. The objective is to enable the Project Managers to ensure effective Project start without losing focus on the delivery priorities."
+        },
+        {
+          "key": "<b>What are the benefits / value out of Actuate for a Project?</b>",
+          "ans": "Structured and Smooth transition from Solution Design to Solution Delivery team.@&Good Understanding of the Project Goals / Objectives.@&Common Understanding with Geo on Contractual Commitments .@&Early Risk Identification and An opportunity to escalate issues and risks with leadership for their attention and support .@&Structured MAW (Method Adoption Workshop) with Service Line SME support to tailor PM&T and Consistent deployment of Service Line best practice methods and tools@&Setup the Project Management System at the right level and establishing the foundation for delivery Quality"
+        },
+        {
+          "key": "<b>Which Projects are eligible for Actuate?</b>",
+          "ans": "All Managed Service Projects qualify for Actuate. Based on Project Risks, size and Complexity, PAL can decide to onboard 'Manpower Services'/ 'Managed with no DC PM' Projects to DE Scope and can go through Actuate."
+        },
+        {
+          "key": "<b>I am starting a PCW project, Should I Initiate Actuate?</b>",
+          "ans": "If project is starting with some of the Delivery activities in the Pre Contract mode, Actuate should be initiated."
+        },
+        {
+          "key": "<b>When does Actuate start for any new Project?</b>",
+          "ans": "Once the Project is registered and announced in Project DB, Actuate Manager will discuss with the PM and Initiate Actuate as per Project delivery timelines."
+        },
+        {
+          "key": "<b>There is a PCR to the Contract / New Scope of Work - How do I Initiate Actuate?</b>",
+          "ans": "Please raise a request in PSN for Actuate Support – Details enclosed.@&Procedure to raise a ticket:@&Send mail to - GD India DE On Demand/India/Contr/IBM in this format (please try to give all the relevant details). Ref sample provided@&To : GD India DE On Demand/India/Contr/IBM@&Cc :@&Bcc :@&Subject : DE-XX-YYYYY [Sector / SL] Title of support needed,  Location/Building - ; @&Body:@&Project Name: ABC@&Contact Name & Number: @&Detailed Description:"
+          
+        },
+        {
+          "key": "<b>What are the activities covered in Actuate?</b>",
+          "ans": "Solution Handover by Solution Manager facilitated during Actuate @&Contract overview with Geo PM facilitated during Actuate@&Identification of Initial Risks from Solution & Contract and the risks due to the variances between Solution Vs Contract Vs Execution.@&Feedback loop to Solution team on the variances@&Initial Risk Report shared and reviewed with the Key stakeholders.@&Guidance and Support in establishing Governance and Risk Management Setups@&Conduct Method Adoption Workshop and help tailor Process, Methodology and Tools leveraging Service Line Best practices@&Tools Adoption support  for IPWC, Connections and RTC@&Guidance and Support in  Project Management System Summary(PMSS) setup@&Facilitate Sub - project identification to ensure governance is done at the right level and Tool updates@&Perform PM Match and highlight any MPP gaps and seek PAL Actions to address these gaps@&Setup  Review calendar for Process and Product quality and Project PMR as per Review guidelines@&Provide support and guidance for Measurement and Metrics Setup and Quality plan@&Guidance on Project Orientation@&Participate in Integrated Joint Project Launch/ EPL / Account Initiation with Geo@&Evaluate Project Health on a weekly basis and highlight risks that require leadership attention/ support  and callout any Early warning indicators"
+        },
+        {
+          "key": "<b>Will Actuate create the PMT plans for the Project?</b>",
+          "ans": "Actuate Manager will guide and provide SME support and help PM in establishing the Project Management System, PMs must create the PMT Plans."
+        },
+        {
+          "key": "<b>What are the inputs required from Projects for Actuate start?</b>",
+          "ans": "Solution Baseline, Contract, Risk assessment reports (TDA/PBA), Milestone plan, Staffing Plan."
+        },
+        {
+          "key": "<b>What are the Actuate variants offered?</b>",
+          "ans": "Actuate offers many variants for different types of Projects, Like - Small/ Regular/Complex Projects for AMS or  NON AMS projects, Customized approach for CBS, Agile, Complex Systems Integration and Multi - DC Engagements. A right variant is chosen during the Actuate qualification discussion based on the nature of Project."
+        },
+        {
+          "key": "<b>What is the duration of Actuate Process?</b>",
+          "ans": "Actuate duration is 40 Calendar days and the Actuate plan is derived based on Delivery timelines. Actuate duration is 30 Calendar days for Small Projects that are adopting Simplified process. For AMS projects, Actuate is executed in 2 phases - one for Transition and then for Steady State setups. These timelines are derived based on Transition planning phase and Steady State timelines."
+        },
+        {
+          "key": "<b>How to get access to Project Solution and Contract Documents?</b>",
+          "ans": "Reach PAL / TSM for the SBD & TDA. PAL / Geo PM for the Contract/SOW / PCR. Geo PM / RM for PBA."
+        },
+		{
+		"key":"<b>What is UOM (Unit of Management)?</b>",
+		"ans":"Optimal (manageable) collection of work components that due to the collective cohesiveness and mutual inter - dependence need to be tracked, managed and delivered as a unit @&Irrespective of the logic for how an account is organized, Units of Management (UoM) will define those work units - which effectively represent the way IBM is managing its work.@&These are at a level of detail – which allows India management to do proactive governance – at the same time, it should be manageable.@&These units of management are to be defined mainly from perspective of a Practice Area Leader/Account Executive. It is understood that work will be managed at lower level inside the accounts."
+		},
+		{
+		"key":"<b>What is the benefit of UOM?</b>",
+		"ans":"UOM helps establish the Governance and reporting at the right level.@&PAL/Delivery Manager Governance (Scorecard, Sector governance report, 7 keys report) inside the delivery is done at UoM levels.@&PM comfort matrix will be applied at UoM – primary purpose being that these UoMs are managed by RIGHT practitioner.@&Various DE reviews and health rating will be done at the Units of Management level. This is to provide the delivery team with findings and feedback at a level, which is actionable.@&Submission of metrics will be at UoM level."
+		},
+        
+		{
+		"key":"<b>What are the typical scenarios that will help in deciding the UOM structure?</b> ",
+		"ans":"Client mandated structure@&PAL discretion@&Different Business Area@&Different Cluster@&Different Technology@&Different Service Line@&Complexity / Criticality@&Manor Enhancement@&Design and Build Project@&Multiple GDC."
+		},
+        
+		{
+		"key":"<b>Why do we need MAW?</b>",
+		"ans":"The Objective of the MAW is to help the project with the right set of Process methods and Tools. In this Workshop, we ensure the process, methods and tools are tailored and decided for the project based on the project requirement and also based on the customer mandated requirement. @&Flag any risk identified from PM&T perspective to the project team"
+		},
+        
+		{
+	    "key":"<b>What is IPL (JPL)?  What is the objective of IP?</b>",
+		"ans":"Integrated Project Launch(Referred earlier as Joint Project Launch)@&Objective of the Integrated project launch is to help integrate the Geo and GD components of a project by initiating communication and providing a necessary framework @&IPL is initiated by Geo. Actuate Manager along with GD PM will Participate from GD@&Ensure that GD actions are completed by respective owners (including open risk, scope clarification among others)"
+	
+		},
+        
+		{
+		"key":"<b>What are the outputs of IPL?</b>",
+		"ans":"IPL Checklist with details of the Status and actions of the various checks"
+		},
+        {
+		"key":"<b>What is EPL?</b>",
+		"ans":"Enhanced Project Launch (EPL) is a key component of the Delivery Management System (DMS) and conducted for Complex CS Engagements. EPL Wiki Link - https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/W46a9e75246f1_4b65_807c_2ddecd8e302a/page/Enhanced%20Project%20Launch%20%28EPL%29"
+		},
+        
+		{
+		"key":"<b>What are the Launch Activites of EPL?</b>",
+		"ans":"Conduct Method Adoption Workshop (MAW) & Tool Assessment workshop (TAW) and Create PM&T Delivery Profile@&Implement PM Tooling, Load initial WBS@&Implement CLM/OWC tool"
+		},
+        
+		{
+		"key":"<b>What is AI?</b>",
+		"ans":"AI - Account Initiation is global program that helps PE/ DPE in establishing the launch processes at the contract level and is done for Complex AMS engagements @&AI - Wiki Link"
+		},
+        {
+		"key":"<b>What are the Focus areas of AI?</b>",
+		"ans":"Engagement Handover Meeting and Contract Read & Analysis@&Conditions of Satisfaction@&Financial Management framework setup@&Deployment of PE Management system (PEMS)@&Contract deliverables, contract performance and other key processes and plans e.g. RFS, Program Risk, Issue management, contract change management, Contract governance"
+		},
+        
+		{
+		"key":"<b>What is EHO?</b>",
+		"ans":"Engagement Handover is a session focusing on the handover from proposal to delivery involving all relevant parties."
+		},
+        {
+		"key":"<b>Should I participate in EHO?</b>",
+		"ans":"PM should participate in EHO for their projects. This will help in getting clarity and details on Solution and Contract. PM should notify DE and engage them in the EHO."
+		},
+		{
+		"key":"<b>My project is going through EPL, should I take it through Actuate?</b>",
+		"ans":"Yes, Actuate focuses on all the Initiation setups for the Centre and leverages some of the activities from EPL. The focus of EPL is largely Method Adoption Workshop/ Tools Assessment & Setup."
+		},
+		{
+		"key":"<b>My Project is going through AI, Should I take it through Actuate?</b>",
+		"ans":"Yes, Actuate focuses on all the Initiation setups for the Centre and leverages some of the activities from AI. The focus of AI is largely on EHO, Contract Financial Setup and PEMs setup at the Contract Level."
+		}
+        
+        
+      ]
+    },
+    
+    
+    {
+      "name" :"Process, Methods & Tools",
+       "data":[
+        {
+          "key": "<b>If I need tool support whome do I contact?</b>",
+          "ans": "For tool related help reach outto Delivery Excellence - GD India DE On Demand/India/Contr/IBM"
+        },
+		  {
+          "key": "<b>Who can help me on IPWC related questions?</b>",
+          "ans": "https://w3-connections.ibm.com/activities/service/html/mainpage#activitypage,21a6ecc3-ebb6-4ece-a92f-c6c7f5c24bc9 "
+        },
+		  {
+          "key": "<b>I Have Data security and privacy (DS&P) query. Who can help me ?</b>",
+          "ans": "Data security and privacy DS&P query can be sent to GBS GD India Dsp Advisory Desk1/India/Contr/IBM"
+        },
+		  {
+          "key": "<b>How to I reach out to Project db admin team for help?</b>",
+          "ans": "Write to Project db team on -   Project db / CPMO - Gbs Project Db Admin/India/Contr/IBM "
+        },
+		  {
+          "key": "<b>How to I get help on CLM tool (Collaborative lifecycle management tool)?</b>",
+          "ans": "CLM tool (Collaborative lifecycle management tool)  help can be obtained at https://w3-connections.ibm.com/activities/service/html/mainpage#activitypage,a6027ef0-558c-44bd-adac-c1162dbc24fa "
+        }
+        
+      ]
+    },
+	{
+      "name": "Delivery Quality (Deliver to Contract)",      
+	  "data"  : [
+        {
+          "key": "<b>Where is ready reckoner for quality assurance activities?</b>",
+          "ans": "Please find links below which will help is looking at links for various tools which PM requires @&https://w3-connections.ibm.com/wikis/home?lang=en_US#!/wiki/Wa1eb78170b14_4d82_a56f_bd94608cd76a/page/Project%20Management%20Tools@&https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/W35bc063fb69c_49b6_8986_c7853291d818/page/Think%20Quality%20a%20Ready%20Reckoner "
+        },
+		{
+          "key": "<b>Where do I find OPAL – Quality Management System of IBM , Where are various process templates/ Guidelines / checklists available?</b>",
+          "ans": "OPAL – Quality Management System of IBM  - Where are various process templates/ Guidelines / checklists available  is at  http://opal.ibm.com/home/"
+        },
+		{
+          "key": "<b>Where to find link to SQA tool?</b>",
+          "ans": "SQA tool link http://w3-08.ibm.com/services/in/sqatool/login.wss"
+        },
+		{
+          "key": "<b>Who will decide what type of review will happen after Actuate?</b>",
+          "ans": "DES / PAL SPOC were creating the IRC till now in consultation with the PM. Now Actuate Managers (AM) are taking on this responsibility in the new structure, the AM will put in the IRC based scope of project where Actuate will be carried out. A guideline will be made available for the same. For all other cases PMs should raise a ticket through PSN for IRC support."
+        },{
+          "key": "<b>What is the duration for which review guideline (IRC) needs to be put in place?</b>",
+          "ans": "12 month or end date, whichever is earlier."
+        },
+		{
+          "key": "<b>For those projects actuate is over, how we are going to plan Comprehensive Reviews. Are there some guidelines available?</b>",
+          "ans": "Project where Actuate would have got completed sometime back, IRC has been re-visited as per guidelines for Comprehensive Reviews"
+        },
+		{
+          "key": "<b>There are some projects that have already undergone process and product reviews, how will it help the project in conducting comprehensive review?</b>",
+          "ans": "Coverage needs to considered w.r.t Process and Product reviews while planning Comprehensive review. This program is under pilot and has a long term plan going up till 2016 for covering all UoMs."
+        },
+		{
+          "key": "<b>Just initiated Actuate projects, how we will go about their reviews planning?</b>",
+          "ans": "AMs will put IRC in place based on the guidelines available. Projects can raise a ticket through PSN for further clarifications."
+        },
+		{
+          "key": "<b>Can Project review/PMR independently happen?</b>",
+          "ans": "Let reviews continue as is at the moment. Comprehensive Review is being piloted at the moment and when appropriate will be planned for a contract."
+        },
+		{
+          "key": "<b>Anybody from central team checked how Comprehensive Reviews have happened for pilot projects, are there any learnings?</b>",
+          "ans": "Yes. CR team is monitoring and adapting as appropriate."
+        },
+		{
+          "key": "<b>Is product review billable as there is a challenge to engage technical SMEs?</b>",
+          "ans": "This is a clear directive from SL SLT on the same. SL DE Leads are taking it up in case to case basis where there are challenges."
+        },
+		{
+          "key": "<b>How can a PM know about review planning? Frequency for planning of reviews. Individual review within 2 months.</b>",
+          "ans": "A.  As part of IRC planning in Jun, the DES would be reaching out to them for validation of future 12 months IRC plan.@&B.Subsequently as PM has access to their IRC in SQA Tool, s/he can review and request for change based on project triggers"
+        },
+		{
+          "key": "<b>IRC will be planned by June or it will be decided by July - Aug?</b>",
+          "ans": "12 months planning will be done in June. Sector SPOCs from Process SME will work with sector DQ team during Jun for this."
+        },
+		{
+          "key": "<b>How will the PMs/PALs be informed about upcoming reviews for a project, what is the governance mechanism for it?</b>",
+          "ans": "Process SME Team will send out:@&aMonthly review schedule notifications.@&b.Quarterly mails for upcoming reviews in IRC for validation."
+        },
+		{
+          "key": "<b>If rating is changing from Red to Green then approval process is required from Sector/PAL before changing the rating?</b>",
+          "ans": "No approval is required. This would be taken up as follows:@&aNext DE Connect such cases will get more focus during the facilitation discussion.@&b.Investigation or sample check by ProAct team."
+        },
+		{
+          "key": "<b>What is Comprehensive Review?</b> ",
+          "ans": "Comprehensive Review is not a review type in SQA IRC, it is a nomenclature for IRC design only. It enables combination of following reviews as per applicability@&Comprehensive – Integrated (Process + Product +Dev Ops+ Project ( as applicable ))@&Comprehensive – Process@&Comprehensive – Product@&Checklist/ Tool@&Process: Current Checklist will be used.@&Product: Checklist prescribed by respective Service Areas/ Technology will be used@&Project Review (PMR/GPR): GS Risk Tool@&DevOps: DevOps Step 1: Self-assessment followed by Step 2: SME assessment (based on self-assessment outcome)"
+        },
+		{
+          "key": "<b>If only product review is planned for a project will it be still called as Comprehensive review?</b> ",
+          "ans": "No. The purpose of CR is to perform 2 or more types of reviews together to optimize PM's time."
+        },
+		{
+          "key": "<b>If already comprehensive review is done for the same project. As per guideline, comprehensive review can be done yearly once?</b>",
+          "ans": "Yes. A CR will be done annually only. Subsequent Product Reviews could be triggered based on project milestones."
+        },
+		{
+          "key": "<b>If project rated as RED then what is the trigger to move the RAG rating to Green. Who is going to plan reviews in IRC?</b>",
+          "ans": "A.Process either part of CR or stand alone will be performed annually. Subsequent reviews in the form of IHC can be requested by Delivery, IHC could be performed by the PM themselves or by another PM in the sector. Sector will hold the responsibility of assigning a cross PM if so desired.@&B.Additional process reviews could be requested by Delivery which will then be evaluated by DE Sector Leaders."
+        },
+		{
+          "key": "<b>If project rated as RED froM Comprehensive review whether project has to undergo another comprehensive review.</b> ",
+          "ans": "CR is annual only.Project Manager can request for Internal Health Check for Reviewing the Action items and Rating may undergo change as a result of IHC"
+        },
+		{
+          "key": "<b>Are we charging the amount doing product review?</b>",
+          "ans": "Yes, as per direction from SL SLT."
+        },
+		{
+          "key": "<b>Who has to initiate Internal Health check?</b>",
+          "ans": "Project Manager has to request the Process SME team for scheduling IHC in SQA tool."
+        },
+		{
+          "key": "<b>No of DE Connect. Limited to 2 DE Connect per year?</b>",
+          "ans": "Yes. Minimum 2 DE Connects in a year, but more could be conducted as required."
+        },
+		{
+          "key": "<b>How DE connects are planned?</b>",
+          "ans": "DE Connects with +4/-4 or +3/-3 months from CR are considered."
+        },
+		{
+          "key": "<b>What About CM Audit planning in IRC?</b>",
+          "ans": "CM audit are to be scheduled and performed as they are already happening, there is no change in this. PMs continue to own this. In the new module, PM can raise a request for having this scheduled in the SQA Tool. Currently a feature is being added in Dossier tool such that PM can give the relevant details, this feature is expected to be available by mid-Jun. Report Release for CM audit - Report will be release as usual not much changed under CM audit"
+        },
+		{
+          "key": "<b>Closure Review planning?</b>",
+          "ans": "Closure Reviews are planned as per the Annual IRC design shared by Sector Spocs. DE connects can be used to verify in case there is any update in project end date. If No De connects are planned and project is short closing, Project Manager need to raise ticket to Process SME team for assistance in project closure activities."
+        },
+		{
+          "key": "<b>What all will be covered under Governance?</b>",
+          "ans": "AI Closure - Monitor AI closure for all review types. Escalate to Sector, PAL and SL Leadership as required@&3P Status reporting to DE External - Monitor timely completion of reviews (Auditors = Delivery Practitioners). Escalate to Delivery and SL as required@&Review coverage and milestone- 1. Review not done for next 3 months 2.Next review planned (for next 3 months)."
+        },
+		{
+          "key": "<b>What all reports will be published?</b>",
+          "ans": "Project score card will also be published to PAL and SAL on monthly basis@&Review Coverage/Milestones is monthly@&Action Item closure status is weekly"
+        },
+		{
+          "key": "<b>Services not covered under Advisory Support</b> ",
+          "ans": "Allocation of SMEs technology wise for PM&T & list to be shared for better effectiveness@&PM&T Assessment and clarifications -@&Metrics queries – Email to be sent to GD DE Metrics Team@&IPWC queries"
+        },
+		{
+          "key": "<b>When can we raise ticket in SCCD Tool? </b>",
+          "ans": "PM to raise ticket in PSN tool (SCCD), effective from Sept 2015"
+        },
+		{
+          "key": "<b>If you face repeat login/authentication issues for SQA tool in Firefox (FF) browser, try any of the below options:-</b>",
+          "ans": "In FF, Clear Cache i.e. Open Menu--> History --> Clear Recent History --> Select Time Range=Everything & 'Cache' only (deselect other options)-->Clear Now@&In FF, Open Menu --> New Private Window --> It will Open new FF browser (which will not store history)@&Use any other browser like Google Chrome(GC), IE etc@&Once logged in with any of the above options, you may also use 'Sign out' option if you face some other issue.@&In case issue still persists after exploring all the above options, raise a ticket to IT HD (https://w3-01.ibm.com/helpcentral/Support) for Application = SQA (BIN/ queue: AINBA_ASDEAPPS). @&Alternately,call 8888 (080-41928888) to raise ticket in BIN (AINBA_ASDEAPPS). Note-Don't say - raise ticket for SQA as SQA is not in list of support applications."
+        },
+		{
+          "key": "<b>SQA Open AI > 6 months- Exception cases (Not showing in Default view of My Audit Findings):-</b>",
+          "ans": "SQA-> My Audit Findings --> Default view is 6 months old (i.e. when From Date & To Date = BLANK).@&If AI Open > 6 mths and not showing in default view (eg Actuate/Milestone, CM AI etc -AI not under SLA), it can be closed by Auditee/Auditor using 'From Date' & 'To Date'.@&This option is useful when DES is closing UOM and gets following error msg: - You can't change project status to Closed/Terminated as Few Audit Findings/Milestones are not closed for this project.@&This error msg during UOM closure is 'not' related to IRC Audit status but is likely in below 2 cases:-@&SQA AI 'Open' in My Audit Findings (can be <6 months or  > 6 months old ,hence for >6 months old ,use Option-From Date & To Date as these AI don't show in default view)@&Audit Schedule (Milestone) Released Flag = N (i.e. audit schedule not released for current/past month due to any reason- Exception case)-Refer Audit Schedule-->Previous Schedules -->Select each prev month (see below) for Release Flag=N (exception cases only). If so, raise a SQA backend ticket to update Release Flag=Y.@&Select Project Profile=ALL(Default - Sub Project) + Click '>' in case"
+        }
+        
+        
+      ]
+    },
+   
+      {
+      
+    
+    
+   "name":"PMCOE - PM Enablement & Governance Maturity",   
+   "data":[
+        {
+          "key": "<b>How can the PM find out his current MPP level?</b>",
+          "ans":"MPP level can be found from the Career Smart tool. Refer to the link@&attached below:@&https://w3-01.sso.ibm.com/hr/career-development-guidance/sites/cdg-site/html/your-capabilities/yc_capabilities.html"
+        },
+        {
+          "key": "<b>How can a PM know what level to meet based on Project requirements</b>",
+          "ans": "Get the Project MPP level from the PAL/AE/DE Specialist."
+        },
+		{
+          "key": "<b>What should a PM do to bridge gaps in MPP level?</b>",
+          "ans": "Submit a package for the required Project MPP level in Career Framework."
+        },
+		{
+          "key": "<b>How should the PM follow up for status of package submission?</b>",
+          "ans": "PM is provided the name of the SMEs once the assignment is done. In case of delays please contact respective Sector SPOC. Sector Operations team should be able to provide sector spoc name."
+        },
+		{
+          "key": "<b>If the package is approved, when would the change be reflected on the tool?</b>",
+          "ans": "If the package is approved, it takes a week's time to reflect on the tool."
+        },
+		{
+          "key": "<b>What are the PM Education to be completed?</b>",
+          "ans": "PM's have to log in through Talent@IBM to complete PM 54G@&On completion, there is no action required. Only if the PM Education data reflects as a NO despite completion then follow the steps as mentioned below@&1) Go to Superzero home page:@& http://learninghelp.atlanta.ibm.com/SuperZERO/indexp.html@&2) Click on 'I have a THINK40 issue' link@&3) Follow appropriate link from there depending on the problem@&4) If they don't find a response to their query, then can write a mail to the LnK team at edhelp06@us.ibm.com@&Once updates are done by L&K, they will be reflected in the PM Comfort tool.@&The PM Comfort tool will be monthly updated. In case the correction is done during this period then the correct information is 1 month time from the last update."
+        },
+		{
+          "key": "<b>SL Training - Link to PM education roadmap.</b>",
+          "ans": "SL Training - Link to PM education roadmap. https://w3-connections.ibm.com/files/app#/file/527a516b-f207-45e6-9786-28017ee9dcce@&Refer to the Tab SL-SA Education. On completion, status gets updated in the L&K database and uploaded onto PM comfort tool. Updates are done monthly. In case the update is not correct then PM follow the steps as mentioned below@&1) Go to Superzero home page:@& http://learninghelp.atlanta.ibm.com/SuperZERO/indexp.html@&2) Click on 'I have a THINK40 issue' link@&3) Follow appropriate link from there depending on the problem@&4) If they don't find a response to their query, then can write a mail to the LnK team at edhelp06@us.ibm.com."
+        },
+		{
+          "key": "<b>How can a PM attend Induction session?</b>",
+          "ans": "PM needs to complete the PM Induction training in Talent@IBM."
+        },
+		{
+          "key": "<b>What should a PM do post induction?</b>",
+          "ans": "PM should complete the assessment sent from LNK."
+        },
+		{
+          "key": "<b>When does completion get reflected on the tool?</b>",
+          "ans": "Only after the assessment is complete on the tool will the PM be marked as 'Complete'. Till then PM will be shown as Pending Assessment."
+        },
+		{
+          "key": "<b>What has changed in the new calculator?</b>",
+          "ans": "Refer https://w3-connections.ibm.com/communities/service/html/communityview?communityUuid=8b7d486f-d041-474a-85cb-14ba4367c734#fullpageWidgetId=W151eaebcad35_4530_87be_6a729711776b&file=35361883-0977-4fa7-b70b-4f3fed461b36 for details"
+        },
+		{
+          "key": "<b>Where can I find the new calculator, so that I can use it for my future projects?</b>",
+          "ans": "Refer  https://w3-connections.ibm.com/communities/service/html/communityview?communityUuid=8b7d486f-d041-474a-85cb-14ba4367c734#fullpageWidgetId=W151eaebcad35_4530_87be_6a729711776b&file=8ed2c04f-674f-4051-9565-d5b49d3a7fd2 for details"
+        },
+		{
+          "key": "<b>Can someone take me through the changes to the calculator?</b>",
+          "ans": "Click https://sas.elluminate.com/site/external/jwsdetect/nativeplayback.jnlp?sid=2012136&psid=2015-05-07.2132.M.CAD94929C404BC291B5C97254A2BAC.vcr to view the recording of the session"
+        },
+		{
+          "key": "<b>My Project requires an Expert Level PM now, which wasn’t the case earlier?</b>",
+          "ans": "Your project might be a Master Project and Tagged as Complex in Delivery Dashboard. As per the Complex Program Management guidelines, all the projects which are tagged as master project and Complex, require an Expert Level PM, managing the same"
+        },
+		{
+          "key": "<b>How do I change the Complexity Flag for my project, as it is no more a complex project?</b>",
+          "ans": "1) The complexity change request applies not at GD level, but at Global/Geo Level@&2) Dashboard is currently the trusted source for complexity at the contract and work number level at Geo level@&3) The complexity change request can be at work number or Contract Level with all approval from PDO (Primary delivery owner)/Delivery Owner to make a work number or Contract noncomplex .It cannot be applied to Project ID likeIN-XX-XXXXX@&4) Please get in touch with your Contract Owner, and after getting concurrence, you can request them to change the complexity flag@&5) Click https://w3-connections.ibm.com/communities/service/html/communityview?communityUuid=8b7d486f-d041-474a-85cb-14ba4367c734#fullpageWidgetId=W151eaebcad35_4530_87be_6a729711776b&file=2d641aac-0209-4758-8bdc-cc137722e9b2 for the Complexity CR Form@&6) Process to change the complexity factor in available in the https://w3-connections.ibm.com/wikis/home?lang=en#!/wiki/W92c807fbeb31_470f_b733_0d0fbdec57fd/page/Complexity%20in%20the%20Dashboard%20Explained"
+        },
+		{
+          "key": "<b>The input parameters for my project is wrong, how do I change it?</b>",
+          "ans": "Details of Input parameter changes are available at below link at Q16 @&https://w3-connections.ibm.com/wikis/home?lang=en#!/wiki/Wa1eb78170b14_4d82_a56f_bd94608cd76a/page/PM Enablement"
+        }
+      ]
+    },
+    {
+      "name": "Metrics - Contract KPI, Org goals",
+      "data":[
+                
+				{
+          "key": "<b>How to get the SWQ Tool access?</b>",
+          "ans": "PM/PL/ PQA/ MA roles should be added in the SQA Tool and it will flow to SWQ tool within 24 hours. The Metrics Coordinator role can be added in the tool-> ‘Project Profile’ by PM/PL role."
+        },
+		{
+          "key": "<b>How to log TSRM ticket for SWQ Metrics tool related problem?</b>",
+          "ans": "Step 1: log a ticket --https://w3-01.ibm.com/helpcentral/Support@&Step 2: Select Business Application > GID SWQ Metrics tool and assign to SWQ Tools@&Team:  AINBA_ASGIDSWQM "
+        },
+		{
+          "key": "<b>When user tries to upload metrics, error message displayed as “No repositories found for the selected project”.</b>",
+          "ans": "Step 1: Configure 'Setup Project Details  Setup Parameter Details' for all the applicable work types and should be approved by Metrics Analyst.@&Step 2: Configure 'Setup project details --> Project Source Repository' for the sub project against the applicable work types from the menu option. @&Note: Project source repository configuration is one time activity."
+        },
+		{
+          "key": "<b>When New Development/Major Enhancement/Testing data is uploaded having deliverable status as  ‘Completed’ WITHOUT ‘Defects’ then error message is displayed as ‘..As deliverable is marked completed, please select the flag' Is Zero Defect Deliverable or upload defect data’.</b>",
+          "ans": "In tool ‘Manage Data’-> ‘’Raw Data Review’ Screen, mark the field ' Is zero defect deliverable' as YES and proceed with the submission."
+        },
+		{
+          "key": "<b>When to submit Waiver details in the SWQ tool? Who can submit the Waiver?</b>",
+          "ans": "If there are NO deliverables or ticket data available for the current month,@&If any of the Development/Enhancement/Testing work type deliverable ‘Phases’ or ‘ Tasks’ are ‘In progress’ then waiver has to be submitted in the tool.@&Note: PL/MC/PM can submit the Waiver. It has to be approved by PM and Metrics Analyst."
+        },
+		{
+          "key": "<b>Uploaded Metrics data does not appear in the ‘Raw Data Review’ but “Manage Data ->Multi Deliverable’ status is ‘Success’ for New Dev/Major Enh/Testing work types</b>",
+          "ans": "Step 1: PM/PL/MC need to check for 2 mail notifications, 1st email for successful upload and 2nd email notification for data processing status.@&Step 2: If error file attached in the 2nd email then reload the data with correction otherwise data must appears in ‘Raw Data Review’ screen (within an hour from the data upload).@&NOTE: Suggest the user to log TSRM ticket in case of email notification delay."
+        },
+		{
+          "key": "<b>Metrics data is approved by the PM in ‘Raw Data Review’ but data does not appear in the ‘Metrics view’ section</b>",
+          "ans": "Step 1: PM can check if any of Mandatory Metric has not met the goal in ‘RCA Submission’ screen. In such case, ONLY PM will be notified to submit RCA.@&Step 2: If data appears in the ‘RCA Submission’ screen then PM is expected to submit RCA in ‘Manage Data -> RCA Submission’ section. If NO email notification received by the PM or data does NOT appear in the ‘Metrics view’ then suggest to log TSRM ticket.@&Note:  ‘Metrics view’ displays only APPROVED data, which is the FINAL submission status.   "
+        },
+		{
+          "key": "<b>Can Project Manager delegate the Metrics approvals activity to any other role?</b>",
+          "ans": "Yes, can be delegated ONLY to the Up-line Manager as per the Project Profile configuration in the SQA tool but CAN NOT be delegated to PL or Metrics Coordinators in the project."
+        },
+		{
+          "key": "<b>Is it possible to DELETE the data after upload in the Metrics tool?</b>",
+          "ans": "Step 1: Yes, ONLY if the data is in ‘Raw Data Review’ Screen. Submitter has as mark the record as ‘REJECT’ or ‘REJECT ALL’ to delete partial or complete data.@&Step 2: If deliverables are APPROVED by the PM and appearing in ‘Metrics View’ then such data CAN NOT be deleted."
+        },
+		{
+          "key": "<b>Is Effort Sheet Mandatory to submit?</b>",
+          "ans": "Yes, in additional to ALL work type data submission, the Effort sheet has to be submitted mandatorily every month. "
+        },
+		{
+          "key": "<b>Can the Metrics Dashboard and project data dumps be accessed by PM/PL/MC/PQA/AM?</b>",
+          "ans": "Yes, all these roles will have access to view the project Metrics performance through dashboard and ONLY approved data can be downloaded from the ‘Reports-> Project data dumps’."
+        },
+		{
+          "key": "<b>Metrics data has been submitted but the Project is marked as DELINQUENT in monthly submission status report?</b>",
+          "ans": "Yes, all enabled work type’s data has to submitted and approved by the PM otherwise waiver has to be submitted. Data submission work flow for all work types are as listed-@&WITHOUT RCA for New Dev/Major Enh/Testing:@&‘MANAGE DATA-> UPLOAD MEASURE DATA->MULTI DELIVERABLE STATUS-> RAW DATA REVIEW->METRICS VIEW@&WITH RCA for New Dev/Major Enh/Testing:@&‘MANAGE DATA-> UPLOAD MEAURE DATA-> MULTI DELIVERABLE STATUS-> RAW DATA REVIEW->RCA SUBMISSION-> METRICS VIEW @&WITHOUT RCA for Maintenance/ Minor Enhancement:@&‘MANAGE DATA-> UPLOAD MEASURE DATA->RAW DATA REVIEW->METRICSVIEW@&WITH RCA for Maintenance/Minor Enhancement:@&‘MANAGE DATA-> UPLOAD MEAURE DATA-> RAW DATA REVIEW->RCA SUBMISSION-> METRICS VIEW "
+        },
+		{
+          "key": "<b>Where do I get Organization Goals / KPI’s?</b>",
+          "ans": "Organization Goals / KPI’s are at @&https://w3-connections.ibm.com/communities/service/html/communityview?communityUuid=6829b39e-04ce-4272-bdd4-ee7329ff9ed8#fullpageWidgetId=W8cdf791a3819_4714_b8ed_2283bc6f3b88&file=bbb847cd-1d2d-4d1d-a22b-3c192c73f692"
+        }
+		]
+		}
+		]
+}

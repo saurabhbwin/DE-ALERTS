@@ -1,0 +1,13 @@
+.custom-btn {
+  
+  margin-left: 27%;
+   
+  margin-top: -1%;
+  
+ 
+}
+
+.ui-grid-a, .ui-grid-b, .ui-grid-c, .ui-grid-d, .ui-grid-solo {
+  overflow: hidden;
+  padding-top: 4% !important;  
+}

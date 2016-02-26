@@ -1,0 +1,449 @@
+
+/* Stylesheet content from css/main.css in folder common */
+
+/* juhi */
+
+
+ .listviewClass li a  {
+    background: #324452 !important;
+	text-shadow: none !important;
+	border-color: #61707d !important;
+	color: white !important;
+}
+
+.listviewClass li a.menuDisabled {
+  color: #61707d !important;
+}
+
+   .listviewClass .active a:ACTIVE{
+    background:  #018ccf !important;
+	color: #324452 !important;
+	
+}
+
+.panel 
+{
+	margin-top: 60px;
+}
+
+
+
+/* juhi */
+
+.custom-btn {
+   /*  background-color: red;
+    border-radius: 50% !important;
+    height: 43px !important;
+    margin-left: 97px;
+    position: absolute;
+    width: 43px !important;
+    display: none; */
+    
+     background-color: red;
+  border-radius: 50% !important;
+  
+  width: 43px !important;
+  display: none;
+  float: right;
+  
+    background-color: red;
+  border-radius: 50% !important;
+  width: 43px !important;
+  display: none;
+  float: right;
+ 
+  
+  position: absolute;
+}
+.custom-btn span {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    height: 10px !important;
+    line-height: 40px;
+   /*  padding-left: 16px; */
+    text-shadow: none;
+    
+    
+} 
+
+#login.ui-page   {
+    color      : green;
+    background : #322460;
+    text-align: center;
+}
+
+.DEHeader{
+	
+	background: url("../images/header.png")  repeat;
+	height: 60px;
+	
+	 
+}
+
+.DEHeader h1{
+	
+  line-height: 37px;
+  text-shadow: none;
+  color: #ECECEC;
+  font-size: 18px !important;
+  
+}
+
+.DEHeader h3{
+   color: #f3f3f3;
+   line-height: 37px;
+   text-shadow: none;
+   font-size: 20px !important;
+}
+
+.DEsubheader{
+	height: 40px;
+	
+}
+.DEsubheader h2{
+	line-height: 20px !important;
+	
+}
+.backicon{
+	
+	background:  url("../images/backicon1.png") no-repeat center !important;
+  background-size: 33px 33px !important;
+  border: none;
+  width: 32px;
+  height: 32px;
+  box-shadow: none;
+}
+
+.menuicon{
+	background:  url("../images/menuicon.png") no-repeat center !important;
+  background-size: 33px 33px !important;
+  border: none;
+  width: 32px;
+  height: 32px;
+  box-shadow: none;
+	
+}
+
+.homeicon{
+	
+	  height: 220px;
+}
+
+.ibmicon{
+	height: 45px;
+	
+}
+.homeTitle{
+	 text-shadow: none;
+  color: #ECECEC;
+  font-size: 20px !important;
+  margin: -30px 0px 20px 0px;
+	
+}
+
+.logoTitile{
+  text-shadow: none;
+  color: #B3B1B1;
+  font-size: 16px !important;
+  margin-top: 35px;
+	
+}
+.frominputs{
+	
+	width:250px !important;
+	margin: 0px auto;
+}
+
+#login .ui-corner-all{
+	
+	border-color: none !important;
+} 
+​
+ 
+.loginButton  {
+ 
+   
+  text-shadow: none !important;
+ 
+  
+   border: none !important;
+   background-color: #144EB9 !important;
+   text-shadow: none !important; 
+   color: #ECECEC !important;
+   font-size: 17px !important !important;
+   height: 42px !important;"
+}
+
+.ui-input-text {
+	
+	background-color: none !important;
+}
+
+.ui-body-inherit{
+	
+	background-color: none !important;
+}
+.ui-corner-all{
+	border-radius:0px !important;
+	border-color: none !important;
+	
+}
+
+
+.ui-header, .ui-footer
+{
+	
+	border:none !important;
+}
+
+
+/*ankit page */
+
+.DEHeader h2{
+
+line-height: 40px;
+text-shadow: none;
+color: #ECECEC;
+font-size: 16px !important;
+}
+
+#AlertsHeader{
+	background: url("../images/header.png") repeat;
+    height: 40px;
+}
+
+.AlertsText{
+	line-height: 37px;
+text-shadow: none;
+color: #ECECEC;
+font-size: 20px !important;
+
+}
+ 
+
+.abc{
+
+background: url("") no-repeat center !important;
+background-size: 33px 33px !important;
+border: none;
+width: 32px;
+height: 32px;
+box-shadow: none;
+} 
+
+ .alerticon{
+background: url("../images/pingicon.png") no-repeat center !important;
+background-size: 28px 28px !important;
+border: none;
+width: 32px;
+  height: 16px;
+float:right;
+box-shadow: none;
+
+}
+.padding{
+	padding-left:7px;
+	font-size: 13px !important;
+   
+}
+ 
+ 
+ 
+ .forumheader{
+   background-color: #BFBACD;
+  height: 33px;
+  padding: 13px;
+  font-weight: bold;
+  color: rgb(81, 81, 81);
+  text-shadow: none;
+  font-size: 18px;
+ }
+ 
+ /*  amartya pages  */
+ 
+ 
+ #communicationGraphPage.ui-page{
+	
+	background: #E7E6EC;
+	}
+	
+	#signInBtn{
+	  background-color: blue !important;
+	  
+	}
+	
+	.pieCharticon{
+	background: url("../images/PieChart.png") no-repeat center !important;
+	 
+	background-size: 28px 28px !important;
+	border: none;
+	width: 32px;
+	  height: 16px;
+	box-shadow: none;
+	}
+	
+		.legendicon{
+	background: url("../images/legend.png") no-repeat center !important;
+	 
+	background-size: 28px 28px !important;
+	border: none;
+	width: 32px;
+	  height: 16px;
+	box-shadow: none;
+	}
+	.searchicon{
+	background: url("../images/Search.png") no-repeat center !important;
+	background-size: 28px 28px !important;
+	border: none;
+	width: 32px;
+	  height: 16px;
+	box-shadow: none;
+	}
+	
+	.listicon{
+	background: url("../images/menu_icon.png") no-repeat center !important;
+	background-size: 28px 28px !important;
+	border: none;
+	width: 32px;
+	  height: 16px;
+	box-shadow: none;
+	}
+	
+	
+.styles{
+	color: #515457;
+	white-space: normal !important;
+	
+}
+
+.styles p{
+	 
+	white-space: normal !important;
+	padding-left: 12px !important;
+	
+}
+
+.ui-icon-carat-r:after {
+     background-image: url("../images/listArrow.png") !important;
+     background-color: #F6F6F6 !important;
+	}
+	
+ .mailButton{
+	  background: #473a67  !important;
+	  color: white !important;
+	  width: 100% !important;
+	    bottom: -7px !important;
+	   font-size:  15px !important;
+	   text-align: center;
+	   text-shadow: none;
+	   position: fixed;
+	 z-index:1000;
+	   left:0px;
+	   right:0px;
+	}
+	.ui-input-search::after {
+	left:-moz-calc !important;
+	right: 0.5em !important;
+	}
+
+
+.search {
+	background: url(../images/searchicon.png) no-repeat scroll right !important;
+    right: 0.5em !important;
+    background-size: 40px 40px !important;
+	
+}
+.ui-input-has-clear {
+	padding-right: 0em !important;
+	}
+	.ui-input-text.ui-input-has-clear .ui-btn.ui-input-clear {
+	right:40px !important;
+	}
+.emptyfilter{
+	
+	background: url("../images/empty-filter.png") no-repeat center !important;
+	background-size: 28px 28px !important;
+	border: none;
+	width: 32px;
+	height: 16px;
+	box-shadow: none;
+}	
+.fullfilter{
+	
+	background: url("../images/Filter.png") no-repeat center !important;
+	background-size: 28px 28px !important;
+	border: none;
+	width: 32px;
+	height: 16px;
+	box-shadow: none;
+}
+
+
+#sectorResultPage .ui-content {
+  
+    padding: 1em !important
+
+}
+/* 
+chat pages */
+
+#txtquerytosubmit{
+	
+	    width: 100%;
+    border: solid 2px;
+    margin: 0px;
+    border-color: black;
+    height:60px;
+    max-height: 60px;
+  
+}
+
+.mainsupporticon{
+	  
+    padding-left: 5px;
+	
+}
+
+.supporticon
+{
+height: 28px !important;
+    width: 37px!important;
+    padding: 0px;
+        margin-bottom: -10px !important;
+}
+
+
+.chatfromclass{
+
+display: flex !important; border: none !important; background: none !important;
+}
+
+.chatfromp{
+font-size: 11px !important; float: left !important; line-height: 6px !important; color: #144EB9 !important; border: none !important; text-indent: -4px
+}
+
+#usersListforProvideSupport .ui-li-count{
+	
+	  border-radius:50% !important;
+    color: #fff;
+     
+    background-color: #ed1c24;
+}
+
+.nored{
+	 
+	background-color: #fff /*{a-body-background-color}*/;
+    
+    color: #333 /*{a-body-color}*
+}
+
+.ESC_status{
+	
+	font-size:10 px !important ;
+	font-weight: normal;
+	text-shadow: none;
+/* Stylesheet content from css/main.css in folder android */
+
+/* this CSS file extends the application CSS file found under common\css */
+
